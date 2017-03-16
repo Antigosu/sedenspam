@@ -303,7 +303,7 @@ class Application(tk.Frame):
 
         for i in range(len(self.EMAIL_SERVERS)):
             if self.my_address.endswith(self.EMAIL_SERVERS[i]):
-                self.email_server = self.EMAIL_SERVERS[i]
+                self.email_server = 'smtp.' + self.EMAIL_SERVERS[i]
 
         # sending...
         for row_number in range(len(self.templates)):
@@ -329,7 +329,7 @@ class Application(tk.Frame):
                 # letter.send_message(message)
                 letter.quit()
                 # TODO: 15-20 seconds
-                time.sleep(1)
+                # time.sleep(20)
                 print(self.templates)
                 print(message)
 
