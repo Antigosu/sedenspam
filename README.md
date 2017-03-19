@@ -1,2 +1,2 @@
 # sedenspam
-Tkinter application for sending emails to huge amount of peoples.
+Tkinter application for sending emails to huge amount of people.
