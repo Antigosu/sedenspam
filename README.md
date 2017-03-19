@@ -1,2 +1,2 @@
 # sedenspam
-Spam Bot for email
+Tkinter application for sending emails to huge amount of peoples.
