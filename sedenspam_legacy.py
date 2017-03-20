@@ -152,7 +152,7 @@ class Application(tk.Frame):
             sticky='N' + 'S' + 'E' + 'W'
         )
 
-        spam_base_name = '.\Templates\spam_base.xlsx'
+        spam_base_name = r'.\templates\spam_base.xlsx'
         self.emails = tk.Entry(
             self,
             fg='black',
@@ -206,7 +206,7 @@ class Application(tk.Frame):
             sticky='N' + 'S' + 'E' + 'W'
         )
 
-        with open('.\Templates\default_text.txt') as default:
+        with open(r'.\templates\default_text.txt') as default:
             default_text = default.read()
 
         self.text = tkst.ScrolledText(
@@ -336,7 +336,7 @@ class Application(tk.Frame):
 # no main func cuz i need to ran app every time
 window = tk.Tk()
 window.title('sed-en-spam')
-window.wm_iconbitmap('.\Pictures\sedenspam.ico')
+window.wm_iconbitmap('.\images\sedenspam.ico')
 window.configure(background='thistle4')
 app = Application(master=window)
 app.mainloop()
