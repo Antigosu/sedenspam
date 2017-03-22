@@ -5,13 +5,27 @@ class Application(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title('sedenspam')
-        self.geometry('600x300+300+225')
+        self.size = '600x300'
+        self.geometry(f'{self.size}+300+225')
         self.wm_iconbitmap('.\images\sedenspam.ico')
         self.configure(background='thistle4')
+        self.centerApplication()
         self.createWindows()
 
     def createWindows(self):
         MainWindow(self)
+
+    def centerApplication(self):
+        width = self.winfo_screenwidth()
+        print(width)
+        height = self.winfo_screenheight()
+        print(height)
+        # size = tuple(int(number) for number in self.geometry().split('+')[0].split('x'))
+        x = int(width / 2 - 600/2)
+        y = int(height / 2 - 300/2)
+        # x = w / 2 - size[0] / 2
+        # y = h / 2 - size[1] / 2
+        self.geometry(f'{self.size}+{x}+{y}')
 
 
 class MainWindow(tk.Frame):
@@ -31,11 +45,11 @@ class MainWindow(tk.Frame):
 class DialogWindow(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
-        self._size = '200x150'
+        self.size = '200x150'
         self.master = master
         self.slave = tk.Toplevel(master)
         self.slave.title('sedenspam')
-        self.slave.geometry(f'{self._size}+500+375')
+        self.slave.geometry(f'{self.size}+500+375')
         self.centerWindow()
 
     def centerWindow(self):
@@ -43,11 +57,11 @@ class DialogWindow(tk.Frame):
         w = self.master.winfo_screenwidth()
         h = self.master.winfo_screenheight()
         # size = tuple(int(number) for number in self.geometry().split('+')[0].split('x'))
-        x = int(w / 2)
-        y = int(h / 2)
+        x = int(w / 2 - 200/2)
+        y = int(h / 2 - 150/2)
         # x = w / 2 - size[0] / 2
         # y = h / 2 - size[1] / 2
-        self.slave.geometry(f'{self._size}+{x}+{y}')
+        self.slave.geometry(f'{self.size}+{x}+{y}')
 
 
 class FAQField(tk.Label):
