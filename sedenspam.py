@@ -9,20 +9,18 @@ class Application(tk.Tk):
         self.geometry(f'{self.size}+300+225')
         self.wm_iconbitmap('.\images\sedenspam.ico')
         self.configure(background='thistle4')
-        self.centerApplication()
-        self.createWindows()
+        self.center_application()
+        self.create_windows()
 
-    def createWindows(self):
+    def create_windows(self):
         MainWindow(self)
 
-    def centerApplication(self):
+    def center_application(self):
         width = self.winfo_screenwidth()
-        print(width)
         height = self.winfo_screenheight()
-        print(height)
         # size = tuple(int(number) for number in self.geometry().split('+')[0].split('x'))
-        x = int(width / 2 - 600/2)
-        y = int(height / 2 - 300/2)
+        x = int(width / 2 - 600 / 2)
+        y = int(height / 2 - 300 / 2)
         # x = w / 2 - size[0] / 2
         # y = h / 2 - size[1] / 2
         self.geometry(f'{self.size}+{x}+{y}')
@@ -32,14 +30,18 @@ class MainWindow(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.configure(background='khaki1')
-        self.createWidgets()
+        self.create_widgets()
         self.grid()
 
-    def createWidgets(self):
-        faq = FAQField(self).enable(row=1)
-        email = PathButton(self).enable(row=2)
-        template = PathButton(self).enable(row=3)
-        database = PathButton(self).enable(row=4)
+    def create_widgets(self):
+        faq = FAQField(self)
+        faq.enable(row=1)
+        email = PathButton(self)
+        email.enable(row=2)
+        template = PathButton(self)
+        template.enable(row=3)
+        database = PathButton(self)
+        database.enable(row=4)
 
 
 class DialogWindow(tk.Frame):
@@ -49,16 +51,16 @@ class DialogWindow(tk.Frame):
         self.master = master
         self.slave = tk.Toplevel(master)
         self.slave.title('sedenspam')
-        self.slave.geometry(f'{self.size}+500+375')
-        self.centerWindow()
+        # self.slave.geometry(f'{self.size}+500+375')
+        self.center_window()
 
-    def centerWindow(self):
+    def center_window(self):
         self.master.update_idletasks()
         w = self.master.winfo_screenwidth()
         h = self.master.winfo_screenheight()
         # size = tuple(int(number) for number in self.geometry().split('+')[0].split('x'))
-        x = int(w / 2 - 200/2)
-        y = int(h / 2 - 150/2)
+        x = int(w / 2 - 200 / 2)
+        y = int(h / 2 - 150 / 2)
         # x = w / 2 - size[0] / 2
         # y = h / 2 - size[1] / 2
         self.slave.geometry(f'{self.size}+{x}+{y}')
