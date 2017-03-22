@@ -28,11 +28,26 @@ class MainWindow(tk.Frame):
         database = PathButton(self).enable(row=4)
 
 
-class DialogWindow:
+class DialogWindow(tk.Frame):
     def __init__(self, master):
+        super().__init__(master)
+        self._size = '200x150'
+        self.master = master
         self.slave = tk.Toplevel(master)
         self.slave.title('sedenspam')
-        self.slave.geometry('200x150+500+375')
+        self.slave.geometry(f'{self._size}+500+375')
+        self.centerWindow()
+
+    def centerWindow(self):
+        self.master.update_idletasks()
+        w = self.master.winfo_screenwidth()
+        h = self.master.winfo_screenheight()
+        # size = tuple(int(number) for number in self.geometry().split('+')[0].split('x'))
+        x = int(w / 2)
+        y = int(h / 2)
+        # x = w / 2 - size[0] / 2
+        # y = h / 2 - size[1] / 2
+        self.slave.geometry(f'{self._size}+{x}+{y}')
 
 
 class FAQField(tk.Label):
@@ -69,7 +84,7 @@ class PathButton(tk.Button):
         self['fg'] = 'black',
         self['bg'] = 'tan1',
         self['cursor'] = 'pirate',
-        # self['command'] = self.click()
+        self['command'] = self.click
 
     def enable(self, row):
         self.grid(
@@ -87,8 +102,8 @@ class PathButton(tk.Button):
     def disable(self):
         self.grid_forget()
 
-    # def click(self):
-    #     DialogWindow(self)
+    def click(self):
+        DialogWindow(self)
 
 
 # TODO: main block
