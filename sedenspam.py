@@ -16,6 +16,7 @@ class MainWindow(tk.Frame):
         super().__init__(master)
         self.grid()
         FAQField(self)
+        PathButton(self)
 
 
 class DialogWindow:
@@ -37,9 +38,28 @@ class FAQField(tk.Label):
         self.grid(
             row=0,
             column=0,
-            columnspan=3,
+            columnspan=1,
             sticky='N' + 'S' + 'E' + 'W'
         )
+
+
+class PathButton(tk.Button):
+    def __init__(self, master):
+        super().__init__(master)
+        self.path = 'some path'
+        self['text'] = self.path,
+        self['fg'] = 'black',
+        self['bg'] = 'bisque3',
+        self['cursor'] = 'pirate',
+        # self['command'] = pass
+        self.grid(
+            row=2,
+            column=0,
+            columnspan=1,
+            rowspan=1,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
+
 
 # TODO: main block
 root = Application()
