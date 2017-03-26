@@ -12,8 +12,11 @@ class MainWindow(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.configure(background='khaki1')
+        self.master.geometry(f'{self.master.x}x{self.master.y}+300+225')
         self.create_widgets()
         self.grid()
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(0, weight=1)
 
     def create_widgets(self):
         faq = fields.faq.FAQField(self)
