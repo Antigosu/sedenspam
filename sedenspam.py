@@ -1,6 +1,5 @@
 import tkinter as tk
 
-
 class Application(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -50,7 +49,8 @@ class MainWindow(tk.Frame):
         database_status.enable(column=1, row=4)
         settings = SettingsButton(self)
         settings.enable(column=1, row=1)
-
+        console = ConsoleField(self)
+        console.enable(column=3, row=1)
 
 class DialogWindow(tk.Frame):
     def __init__(self, master):
@@ -181,6 +181,29 @@ class SettingsButton(tk.Button):
 
     def click(self):
         DialogWindow(self)
+
+class ConsoleField(tk.Label):
+    def __init__(self, master):
+        super().__init__(master)
+        self.event = 'Сейчас что-то происходит...'
+        self['text'] = self.event,
+        self['fg'] = 'black',
+        self['bg'] = 'bisque3',
+        self['relief'] = 'raised',
+        self['borderwidth'] = 1
+
+    def enable(self, column, row):
+        self.grid(
+            column=column,
+            row=row,
+            columnspan=1,
+            rowspan=2,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
 
 
 # TODO: main block
