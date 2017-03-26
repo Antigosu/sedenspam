@@ -42,6 +42,12 @@ class MainWindow(tk.Frame):
         template.enable(column=0, row=3)
         database = PathButton(self)
         database.enable(column=0, row=4)
+        email_status = StatusLabel(self)
+        email_status.enable(column=1, row=2)
+        template_status = StatusLabel(self)
+        template_status.enable(column=1, row=3)
+        database_status = StatusLabel(self)
+        database_status.enable(column=1, row=4)
 
 
 class DialogWindow(tk.Frame):
@@ -78,7 +84,7 @@ class FAQField(tk.Label):
 
     def enable(self, column, row):
         self.grid(
-            column=0,
+            column=column,
             row=row,
             columnspan=1,
             padx=5,
@@ -120,6 +126,28 @@ class PathButton(tk.Button):
 
     def click(self):
         DialogWindow(self)
+
+class StatusLabel(tk.Label):
+    def __init__(self, master):
+        super().__init__(master)
+        self['text'] = 'V'
+        self['fg'] = 'black',
+        self['bg'] = 'bisque3',
+        self['relief'] = 'raised',
+        self['borderwidth'] = 1
+
+    def enable(self, column, row):
+        self.grid(
+            column=column,
+            row=row,
+            columnspan=1,
+            rowspan=1,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
 
 
 # TODO: main block
