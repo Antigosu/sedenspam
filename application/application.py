@@ -13,8 +13,6 @@ class Application(tkinter.Tk):
         self.configure(background='thistle4')
         self.center_application()
         self.create_windows()
-        self.columnconfigure(0, weight=1)
-        self.rowconfigure(0, weight=1)
 
     def create_windows(self):
         windows.main.MainWindow(self)
