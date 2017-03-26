@@ -1,11 +1,10 @@
 import tkinter
 
 
-class FAQField(tkinter.Label):
+class StatusLabel(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
-        self['text'] = 'Добро пожаловать в SED-EN-SPAM!!1\n' \
-                       'Рассылка спама теперь еще веселее и продуктивнее.'
+        self['text'] = 'V'
         self['fg'] = 'black',
         self['bg'] = 'bisque3',
         self['relief'] = 'raised',
@@ -16,6 +15,7 @@ class FAQField(tkinter.Label):
             column=column,
             row=row,
             columnspan=1,
+            rowspan=1,
             padx=5,
             pady=5,
             ipadx=5,
@@ -23,5 +23,5 @@ class FAQField(tkinter.Label):
             sticky='N' + 'S' + 'E' + 'W'
         )
 
-    def disable(self):
-        self.grid_forget()
+    def change_status(self):
+        pass

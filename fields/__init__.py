@@ -1,1 +1,1 @@
-__all__ = ['console', 'database', 'faq', 'template']
+__all__ = ['console', 'database', 'faq', 'status', 'template']
