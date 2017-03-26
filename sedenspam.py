@@ -35,13 +35,13 @@ class MainWindow(tk.Frame):
 
     def create_widgets(self):
         faq = FAQField(self)
-        faq.enable(row=1)
+        faq.enable(column=0, row=1)
         email = PathButton(self)
-        email.enable(row=2)
+        email.enable(column=0 ,row=2)
         template = PathButton(self)
-        template.enable(row=3)
+        template.enable(column=0, row=3)
         database = PathButton(self)
-        database.enable(row=4)
+        database.enable(column=0, row=4)
 
 
 class DialogWindow(tk.Frame):
@@ -76,10 +76,10 @@ class FAQField(tk.Label):
         self['relief'] = 'raised',
         self['borderwidth'] = 1
 
-    def enable(self, row):
+    def enable(self, column, row):
         self.grid(
-            row=row,
             column=0,
+            row=row,
             columnspan=1,
             padx=5,
             pady=5,
@@ -102,10 +102,10 @@ class PathButton(tk.Button):
         self['cursor'] = 'pirate',
         self['command'] = self.click
 
-    def enable(self, row):
+    def enable(self, column, row):
         self.grid(
+            column=column,
             row=row,
-            column=0,
             columnspan=1,
             rowspan=1,
             padx=5,
