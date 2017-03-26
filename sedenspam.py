@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 class Application(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -36,7 +37,7 @@ class MainWindow(tk.Frame):
         faq = FAQField(self)
         faq.enable(column=0, row=1)
         email = PathButton(self)
-        email.enable(column=0 ,row=2)
+        email.enable(column=0, row=2)
         template = PathButton(self)
         template.enable(column=0, row=3)
         database = PathButton(self)
@@ -51,6 +52,7 @@ class MainWindow(tk.Frame):
         settings.enable(column=1, row=1)
         console = ConsoleField(self)
         console.enable(column=3, row=1)
+
 
 class DialogWindow(tk.Frame):
     def __init__(self, master):
@@ -129,6 +131,7 @@ class PathButton(tk.Button):
     def click(self):
         DialogWindow(self)
 
+
 class StatusLabel(tk.Label):
     def __init__(self, master):
         super().__init__(master)
@@ -153,6 +156,7 @@ class StatusLabel(tk.Label):
 
     def change_status(self):
         pass
+
 
 class SettingsButton(tk.Button):
     def __init__(self, master):
@@ -181,6 +185,7 @@ class SettingsButton(tk.Button):
 
     def click(self):
         DialogWindow(self)
+
 
 class ConsoleField(tk.Label):
     def __init__(self, master):
