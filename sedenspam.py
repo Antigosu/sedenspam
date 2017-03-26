@@ -48,6 +48,8 @@ class MainWindow(tk.Frame):
         template_status.enable(column=1, row=3)
         database_status = StatusLabel(self)
         database_status.enable(column=1, row=4)
+        settings = SettingsButton(self)
+        settings.enable(column=1, row=1)
 
 
 class DialogWindow(tk.Frame):
@@ -148,6 +150,37 @@ class StatusLabel(tk.Label):
             ipady=5,
             sticky='N' + 'S' + 'E' + 'W'
         )
+
+    def change_status(self):
+        pass
+
+class SettingsButton(tk.Button):
+    def __init__(self, master):
+        super().__init__(master)
+        self['text'] = 'sets'
+        self['fg'] = 'black',
+        self['bg'] = 'tan1',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+    def enable(self, column, row):
+        self.grid(
+            column=column,
+            row=row,
+            columnspan=1,
+            rowspan=1,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
+
+    def disable(self):
+        self.grid_forget()
+
+    def click(self):
+        DialogWindow(self)
 
 
 # TODO: main block
