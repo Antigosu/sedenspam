@@ -4,7 +4,7 @@ import tkinter
 class DatabasePreview(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
-        self.event = 'Загружаем базу данных...'
+        self.event = '\n\n\nЗагружаем базу данных...\n\n\n'
         self['text'] = self.event,
         self['fg'] = 'black',
         self['bg'] = 'bisque3',

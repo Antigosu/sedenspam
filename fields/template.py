@@ -4,7 +4,7 @@ import tkinter
 class TemplatePreview(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
-        self.event = 'Загружаем базу данных...'
+        self.event = '\n\n\nЗагружаем структуру письма...\n\n\n'
         self['text'] = self.event,
         self['fg'] = 'black',
         self['bg'] = 'bisque3',
@@ -15,7 +15,7 @@ class TemplatePreview(tkinter.Label):
         self.grid(
             column=column,
             row=row,
-            columnspan=1,
+            columnspan=2,
             rowspan=1,
             padx=5,
             pady=5,

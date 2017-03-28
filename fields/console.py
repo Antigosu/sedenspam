@@ -15,7 +15,7 @@ class ConsoleField(tkinter.Label):
         self.grid(
             column=column,
             row=row,
-            columnspan=1,
+            columnspan=2,
             rowspan=2,
             padx=5,
             pady=5,
