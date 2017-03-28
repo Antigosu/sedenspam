@@ -9,7 +9,7 @@ class MainWindow(tkinter.Frame):
         self.configure(background='slategray1')
         self.master.geometry(f'{self.master.x}x{self.master.y}+300+225')
         self.create_widgets()
-        self.pack(side='bottom', fill='both', expand='yes')
+        self.pack(side='bottom', fill='x', expand='yes')
         for col_index in range(4):
             self.columnconfigure(col_index, weight=1)
         for row_index in range(1):
