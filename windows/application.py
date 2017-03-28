@@ -1,8 +1,8 @@
 import tkinter
 
-import application.user_input
-import application.user_input_preview
-import application.console
+import frames.input
+import frames.inputview
+import frames.console
 
 
 class Application(tkinter.Tk):
@@ -18,9 +18,9 @@ class Application(tkinter.Tk):
         self.create_windows()
 
     def create_windows(self):
-        application.user_input.MainWindow(self)
-        application.user_input_preview.MainWindow(self)
-        application.console.MainWindow(self)
+        frames.input.MainWindow(self)
+        frames.inputview.MainWindow(self)
+        frames.console.MainWindow(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()

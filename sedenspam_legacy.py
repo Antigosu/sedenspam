@@ -11,7 +11,7 @@ from openpyxl import load_workbook
 
 class Application(tk.Frame):
     """
-    GUI application for lovely spam letters :3
+    GUI frames for lovely spam letters :3
     """
 
     def __init__(self, master):
