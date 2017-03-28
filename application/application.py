@@ -1,6 +1,7 @@
 import tkinter
 
 import application.user_input
+import application.user_input_preview
 
 
 class Application(tkinter.Tk):
@@ -17,6 +18,7 @@ class Application(tkinter.Tk):
 
     def create_windows(self):
         application.user_input.MainWindow(self)
+        application.user_input_preview.MainWindow(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()
