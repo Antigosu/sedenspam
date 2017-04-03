@@ -13,21 +13,10 @@ class PathButton(tkinter.Button):
         self['command'] = self.click
         self.pack(side='top', fill='x', expand='yes')
 
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=1,
-    #         rowspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
-    #
-    # def disable(self):
-    #     self.grid_forget()
+        # for col_index in range(2):
+        #     self.columnconfigure(col_index, weight=1)
+        # for row_index in range(4):
+        #     self.rowconfigure(row_index, weight=1)
 
     def click(self):
         source.windows.DialogWindow(self)
@@ -42,22 +31,6 @@ class SettingsButton(tkinter.Button):
         self['cursor'] = 'pirate',
         self['command'] = self.click
         self.pack(side='top', fill='x', expand='yes')
-
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=1,
-    #         rowspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
-    #
-    # def disable(self):
-    #     self.grid_forget()
 
     def click(self):
         source.windows.DialogWindow(self)

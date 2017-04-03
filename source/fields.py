@@ -12,19 +12,6 @@ class ConsoleField(tkinter.Label):
         self['borderwidth'] = 1
         self.pack(side='top', fill='x', expand='yes')
 
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=2,
-    #         rowspan=2,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
-
 
 class DatabasePreview(tkinter.Label):
     def __init__(self, master):
@@ -36,19 +23,6 @@ class DatabasePreview(tkinter.Label):
         self['relief'] = 'raised'
         self['borderwidth'] = 1
         self.pack(side='top', fill='x', expand='yes')
-
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=2,
-    #         rowspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
 
 
 class FAQField(tkinter.Label):
@@ -62,21 +36,6 @@ class FAQField(tkinter.Label):
         self['borderwidth'] = 1
         self.pack(side='top', fill='x', expand='yes')
 
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
-    #
-    # def disable(self):
-    #     self.grid_forget()
-
 
 class StatusLabel(tkinter.Label):
     def __init__(self, master):
@@ -88,19 +47,6 @@ class StatusLabel(tkinter.Label):
         self['relief'] = 'raised'
         self['borderwidth'] = 1
         self.pack(side='top', fill='x', expand='yes')
-
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=1,
-    #         rowspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )
 
     def change_status(self):
         pass
@@ -116,16 +62,3 @@ class TemplatePreview(tkinter.Label):
         self['relief'] = 'raised'
         self['borderwidth'] = 1
         self.pack(side='top', fill='x', expand='yes')
-
-    # def enable(self, column, row):
-    #     self.grid(
-    #         column=column,
-    #         row=row,
-    #         columnspan=2,
-    #         rowspan=1,
-    #         padx=5,
-    #         pady=5,
-    #         ipadx=5,
-    #         ipady=5,
-    #         sticky='N' + 'S' + 'E' + 'W'
-    #     )

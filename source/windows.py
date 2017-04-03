@@ -1,5 +1,4 @@
 import tkinter
-
 from source import frames
 
 
@@ -16,7 +15,7 @@ class Application(tkinter.Tk):
         self.create_windows()
 
     def create_windows(self):
-        faq = frames.FAQFrame(self)
+        frames.FAQFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()
