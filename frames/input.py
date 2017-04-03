@@ -1,8 +1,6 @@
 import tkinter
 import fields.faq
-import buttons.email
-import buttons.template
-import buttons.database
+import buttons.dialogbutton
 import buttons.settings
 import fields.status
 
@@ -27,12 +25,12 @@ class MainWindow(tkinter.Frame):
     def create_widgets(self):
         faq = fields.faq.FAQField(self)
         faq.enable(column=0, row=0)
-        email = buttons.email.PathButton(self)
-        email.enable(column=0, row=1)
-        template = buttons.template.PathButton(self)
-        template.enable(column=0, row=2)
-        database = buttons.database.PathButton(self)
-        database.enable(column=0, row=3)
+        email = buttons.dialogbutton.PathButton(self)
+        # email.enable(column=0, row=1)
+        template = buttons.dialogbutton.PathButton(self)
+        # template.enable(column=0, row=2)
+        database = buttons.dialogbutton.PathButton(self)
+        # database.enable(column=0, row=3)
         settings = buttons.settings.SettingsButton(self)
         settings.enable(column=1, row=0)
         email_status = fields.status.StatusLabel(self)
