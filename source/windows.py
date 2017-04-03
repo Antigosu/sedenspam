@@ -15,7 +15,7 @@ class Application(tkinter.Tk):
         self.create_windows()
 
     def create_windows(self):
-        frames.FAQFrame(self)
+        frames.MainFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()

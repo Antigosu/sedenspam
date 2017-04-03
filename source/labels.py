@@ -25,7 +25,7 @@ class DatabasePreview(tkinter.Label):
         self.pack(side='top', fill='x', expand='yes')
 
 
-class FAQField(tkinter.Label):
+class FAQLabel(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
         self['text'] = 'Добро пожаловать в SED-EN-SPAM!!1\n' \
@@ -34,12 +34,22 @@ class FAQField(tkinter.Label):
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        self.pack(side='top')
         # self.pack(side='top', fill='x', expand='yes')
 
+        self.grid(
+            column=0,
+            row=0,
+            columnspan=1,
+            rowspan=1,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
 
 class StatusLabel(tkinter.Label):
-    def __init__(self, master):
+    def __init__(self, master, row):
         super().__init__(master)
         self.text = 'some text'
         self['text'] = self.text
@@ -47,7 +57,19 @@ class StatusLabel(tkinter.Label):
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        self.pack(side='top', fill='x', expand='yes')
+        # self.pack(side='top', fill='x', expand='yes')
+
+        self.grid(
+            column=0,
+            row=row,
+            columnspan=1,
+            rowspan=1,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='N' + 'S' + 'E' + 'W'
+        )
 
     def change_status(self):
         pass
