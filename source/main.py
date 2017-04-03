@@ -1,6 +1,6 @@
-import windows.application
+from source.windows import Application
 
 
 # TODO: main block
-root = windows.application.Application()
+root = Application()
 root.mainloop()

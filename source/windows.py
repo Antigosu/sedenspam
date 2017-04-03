@@ -10,15 +10,13 @@ class Application(tkinter.Tk):
         self.x = '600'
         self.y = '600'
         self.geometry(f'{self.x}x{self.y}+300+225')
-        self.wm_iconbitmap('.\images\sedenspam.ico')
+        self.wm_iconbitmap('..\images\sedenspam.ico')
         self.configure(background='thistle4')
         self.center_application()
         self.create_windows()
 
     def create_windows(self):
-        frames.input.MainWindow(self)
-        frames.inputview.MainWindow(self)
-        frames.console.MainWindow(self)
+        faq = frames.FAQFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()
@@ -33,9 +31,6 @@ class Application(tkinter.Tk):
 
 class Email(tkinter.Tk):
     pass
-
-
-import tkinter
 
 
 class DialogWindow(tkinter.Frame):
