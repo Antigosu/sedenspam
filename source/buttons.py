@@ -30,7 +30,8 @@ class SettingsButton(tkinter.Button):
         self['bg'] = 'tan1',
         self['cursor'] = 'pirate',
         self['command'] = self.click
-        self.pack(side='top', fill='x', expand='yes')
+        self.pack(side='top')
+        # self.pack(side='top', fill='x', expand='yes')
 
     def click(self):
         source.windows.DialogWindow(self)

@@ -34,7 +34,8 @@ class FAQField(tkinter.Label):
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        self.pack(side='top', fill='x', expand='yes')
+        self.pack(side='top')
+        # self.pack(side='top', fill='x', expand='yes')
 
 
 class StatusLabel(tkinter.Label):
