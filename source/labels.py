@@ -34,7 +34,6 @@ class FAQLabel(tkinter.Label):
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        # self.pack(side='top', fill='x', expand='yes')
 
         self.grid(
             column=0,
@@ -48,6 +47,7 @@ class FAQLabel(tkinter.Label):
             sticky='WENS'
         )
 
+
 class StatusLabel(tkinter.Label):
     def __init__(self, master, row):
         super().__init__(master)
@@ -57,7 +57,6 @@ class StatusLabel(tkinter.Label):
         self['bg'] = 'tan1'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        # self.pack(side='top', fill='x', expand='yes')
 
         self.grid(
             column=0,

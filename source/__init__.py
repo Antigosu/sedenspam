@@ -1,1 +1,1 @@
-__all__ = ['buttons', 'fields', 'frames', 'main', 'settings', 'windows']
+__all__ = ['buttons', 'frames', 'labels' 'main', 'settings', 'windows']

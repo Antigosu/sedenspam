@@ -11,7 +11,6 @@ class PathButton(tkinter.Button):
         self['bg'] = 'tan1',
         self['cursor'] = 'pirate',
         self['command'] = self.click
-        # self.pack(side='top', fill='x', expand='yes')
 
         self.grid(
             column=1,
@@ -37,7 +36,6 @@ class SettingsButton(tkinter.Button):
         self['bg'] = 'bisque3',
         self['cursor'] = 'pirate',
         self['command'] = self.click
-        # self.pack(side='top', fill='both', expand='yes')
 
         self.grid(
             column=1,
