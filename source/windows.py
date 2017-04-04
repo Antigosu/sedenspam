@@ -6,16 +6,20 @@ class Application(tkinter.Tk):
     def __init__(self):
         super().__init__()
         self.title('sedenspam')
-        self.x = '600'
-        self.y = '600'
+        self.x = '100'
+        self.y = '100'
         self.geometry(f'{self.x}x{self.y}+300+225')
         self.wm_iconbitmap('..\images\sedenspam.ico')
         self.configure(background='thistle4')
+        self.minsize(width=435, height=300)
         self.center_application()
         self.create_windows()
 
     def create_windows(self):
-        frames.MainFrame(self)
+        frames.SetupFrame(self)
+        # frames.EmailFrame(self)
+        # frames.TemplateFrame(self)
+        # frames.DatabaseFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()

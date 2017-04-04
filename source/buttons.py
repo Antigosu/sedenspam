@@ -14,7 +14,7 @@ class PathButton(tkinter.Button):
         # self.pack(side='top', fill='x', expand='yes')
 
         self.grid(
-            column=0,
+            column=1,
             row=row,
             columnspan=1,
             rowspan=1,
@@ -22,7 +22,7 @@ class PathButton(tkinter.Button):
             pady=5,
             ipadx=5,
             ipady=5,
-            sticky='N' + 'S' + 'E' + 'W'
+            sticky='WENS'
         )
 
     def click(self):
@@ -34,13 +34,13 @@ class SettingsButton(tkinter.Button):
         super().__init__(master)
         self['text'] = 'sets'
         self['fg'] = 'black',
-        self['bg'] = 'tan1',
+        self['bg'] = 'bisque3',
         self['cursor'] = 'pirate',
         self['command'] = self.click
         # self.pack(side='top', fill='both', expand='yes')
 
         self.grid(
-            column=0,
+            column=1,
             row=0,
             columnspan=1,
             rowspan=1,
@@ -48,7 +48,7 @@ class SettingsButton(tkinter.Button):
             pady=5,
             ipadx=5,
             ipady=5,
-            sticky='N' + 'S' + 'E' + 'W'
+            sticky='WENS'
         )
 
     def click(self):

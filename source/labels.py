@@ -45,7 +45,7 @@ class FAQLabel(tkinter.Label):
             pady=5,
             ipadx=5,
             ipady=5,
-            sticky='N' + 'S' + 'E' + 'W'
+            sticky='WENS'
         )
 
 class StatusLabel(tkinter.Label):
@@ -54,7 +54,7 @@ class StatusLabel(tkinter.Label):
         self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
-        self['bg'] = 'bisque3'
+        self['bg'] = 'tan1'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
         # self.pack(side='top', fill='x', expand='yes')
@@ -68,7 +68,7 @@ class StatusLabel(tkinter.Label):
             pady=5,
             ipadx=5,
             ipady=5,
-            sticky='N' + 'S' + 'E' + 'W'
+            sticky='WENS'
         )
 
     def change_status(self):
