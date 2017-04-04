@@ -29,5 +29,20 @@ class SetupFrame(tkinter.Frame):
         buttons.PathButton(self, 3)
 
 
-class Operations(tkinter.Frame):
-    pass
+class OperationFrame(tkinter.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+
+        self.configure(background='sienna1')
+        for col_index in range(2):
+            self.rowconfigure(col_index, weight=1, minsize=100)
+        for row_index in range(2):
+            self.rowconfigure(row_index, weight=1, minsize=65)
+
+        self.pack(side='top', fill='both', expand='yes')
+        self.create_widgets()
+
+    def create_widgets(self):
+        labels.ConsoleLabel(self)
+        buttons.OperationButton(self, column=0, row=1)
+        buttons.OperationButton(self, column=1, row=1)
