@@ -79,7 +79,7 @@ class ConsoleLabel(tkinter.Label):
         self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
-        self['bg'] = 'tan1'
+        self['bg'] = 'skyblue'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
 
@@ -87,7 +87,7 @@ class ConsoleLabel(tkinter.Label):
             column=0,
             row=0,
             columnspan=2,
-            rowspan=1,
+            rowspan=2,
             padx=5,
             pady=5,
             ipadx=5,

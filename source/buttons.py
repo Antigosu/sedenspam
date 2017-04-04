@@ -54,20 +54,20 @@ class SettingsButton(tkinter.Button):
 
 
 class OperationButton(tkinter.Button):
-    def __init__(self, master, column=0, row=0):
+    def __init__(self, master, column=0):
         super().__init__(master)
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
-        self['bg'] = 'green2',
+        self['bg'] = 'springgreen3',
         self['cursor'] = 'pirate',
         self['command'] = self.click
 
         self.grid(
             column=column,
-            row=row,
+            row=0,
             columnspan=1,
-            rowspan=1,
+            rowspan=2,
             padx=5,
             pady=5,
             ipadx=5,

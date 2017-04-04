@@ -11,12 +11,14 @@ class Application(tkinter.Tk):
         self.geometry(f'{self.x}x{self.y}+300+225')
         self.wm_iconbitmap('..\images\sedenspam.ico')
         self.configure(background='thistle4')
-        self.minsize(width=435, height=300)
+        self.minsize(width=755, height=300)
         self.center_application()
         self.create_windows()
 
     def create_windows(self):
         frames.SetupFrame(self)
+        frames.ConsoleFrame(self)
+        frames.OperationFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()
