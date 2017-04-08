@@ -60,3 +60,38 @@ class OperationFrame(tkinter.Frame):
     def create_widgets(self):
         buttons.OperationButton(self, column=0)
         buttons.OperationButton(self, column=1)
+
+
+class PreviewFrame(tkinter.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+
+        self.configure(background='steelblue')
+        self.columnconfigure(0, weight=1, minsize=150)
+        self.columnconfigure(1, weight=1, minsize=150)
+        self.rowconfigure(0, weight=1, minsize=245)
+
+        self.pack(side='top', fill='both', expand='yes')
+        self.create_widgets()
+
+    def create_widgets(self):
+        labels.PreviewLabel(self, column=0)
+        labels.PreviewLabel(self, column=1)
+
+class MainFrame(tkinter.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+
+        self.configure(background='steelblue')
+
+        # for col_index in range(5):
+        #     self.columnconfigure(col_index, weight=1, minsize=150)
+        # self.rowconfigure(0, weight=1, minsize=75)
+
+        self.pack(side='top', fill='both', expand='yes')
+        self.create_widgets()
+
+    def create_widgets(self):
+        SetupFrame(self)
+        ConsoleFrame(self)
+        OperationFrame(self)

@@ -98,14 +98,27 @@ class ConsoleLabel(tkinter.Label):
     def change_status(self):
         pass
 
-
-class TemplatePreview(tkinter.Label):
-    def __init__(self, master):
+class PreviewLabel(tkinter.Label):
+    def __init__(self, master, column):
         super().__init__(master)
-        self.text = '\n\n\nЗагружаем структуру письма...\n\n\n'
+        self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
-        self['bg'] = 'bisque3'
+        self['bg'] = 'skyblue'
         self['relief'] = 'raised'
         self['borderwidth'] = 1
-        self.pack(side='top', fill='x', expand='yes')
+
+        self.grid(
+            column=column,
+            row=0,
+            columnspan=1,
+            rowspan=1,
+            padx=5,
+            pady=5,
+            ipadx=5,
+            ipady=5,
+            sticky='WENS'
+        )
+
+    def change_status(self):
+        pass
