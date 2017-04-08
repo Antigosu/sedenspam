@@ -1,30 +1,6 @@
 import tkinter
 
 
-class ConsoleField(tkinter.Label):
-    def __init__(self, master):
-        super().__init__(master)
-        self.text = 'Сейчас что-то происходит...'
-        self['text'] = self.text
-        self['fg'] = 'black'
-        self['bg'] = 'bisque3'
-        self['relief'] = 'raised'
-        self['borderwidth'] = 1
-        self.pack(side='top', fill='x', expand='yes')
-
-
-class DatabasePreview(tkinter.Label):
-    def __init__(self, master):
-        super().__init__(master)
-        self.text = '\n\n\nЗагружаем базу данных...\n\n\n'
-        self['text'] = self.text
-        self['fg'] = 'black'
-        self['bg'] = 'bisque3'
-        self['relief'] = 'raised'
-        self['borderwidth'] = 1
-        self.pack(side='top', fill='x', expand='yes')
-
-
 class FAQLabel(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
@@ -73,6 +49,7 @@ class StatusLabel(tkinter.Label):
     def change_status(self):
         pass
 
+
 class ConsoleLabel(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
@@ -97,6 +74,7 @@ class ConsoleLabel(tkinter.Label):
 
     def change_status(self):
         pass
+
 
 class PreviewLabel(tkinter.Label):
     def __init__(self, master, column):
