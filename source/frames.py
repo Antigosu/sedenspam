@@ -8,7 +8,7 @@ class SetupFrame(tkinter.Frame):
 
         self.configure(background='cyan3')
         self.columnconfigure(0, weight=1, minsize=350)
-        self.columnconfigure(1, weight=1, minsize=65)
+        self.columnconfigure(1, weight=1, minsize=75)
         for row_index in range(4):
             self.rowconfigure(row_index, weight=1, minsize=75)
 

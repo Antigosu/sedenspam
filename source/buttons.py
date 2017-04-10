@@ -5,6 +5,7 @@ import source.windows
 class PathButton(tkinter.Button):
     def __init__(self, master, row):
         super().__init__(master)
+        self.master = master
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
@@ -25,7 +26,12 @@ class PathButton(tkinter.Button):
         )
 
     def click(self):
-        source.windows.DialogWindow(self)
+        # source.windows.DialogWindow(self)
+        self.h = self.winfo_y()
+        self.w = self.winfo_x()
+        self.update_idletasks()
+        print(self.h)
+        print(self.w)
 
 
 class SettingsButton(tkinter.Button):
