@@ -2,7 +2,7 @@ import tkinter
 import source.windows
 
 
-class PathButton(tkinter.Button):
+class UserChoiceButton(tkinter.Button):
     def __init__(self, master, row):
         super().__init__(master)
         self.master = master
@@ -27,11 +27,9 @@ class PathButton(tkinter.Button):
 
     def click(self):
         # source.windows.DialogWindow(self)
-        self.h = self.winfo_y()
-        self.w = self.winfo_x()
         self.update_idletasks()
-        print(self.h)
-        print(self.w)
+        print(self.winfo_y())
+        print(self.winfo_x())
 
 
 class SettingsButton(tkinter.Button):

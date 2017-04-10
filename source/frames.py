@@ -20,13 +20,13 @@ class SetupFrame(tkinter.Frame):
         settings_button = buttons.SettingsButton(self)
 
         email_choice_label = labels.UserChoiceLabel(self, 1)
-        email_choice_button = buttons.PathButton(self, 1)
+        email_choice_button = buttons.UserChoiceButton(self, 1)
 
         template_choice_label = labels.UserChoiceLabel(self, 2)
-        template_choice_button = buttons.PathButton(self, 2)
+        template_choice_button = buttons.UserChoiceButton(self, 2)
 
         database_choice_label = labels.UserChoiceLabel(self, 3)
-        database_choice_button = buttons.PathButton(self, 3)
+        database_choice_button = buttons.UserChoiceButton(self, 3)
 
 
 class ConsoleFrame(tkinter.Frame):
