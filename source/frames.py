@@ -7,7 +7,7 @@ class SetupFrame(tkinter.Frame):
         super().__init__(master)
 
         self.configure(background='cyan3')
-        self.columnconfigure(0, weight=1, minsize=350)
+        self.columnconfigure(0, weight=1, minsize=225)
         self.columnconfigure(1, weight=1, minsize=75)
         for row_index in range(4):
             self.rowconfigure(row_index, weight=1, minsize=75)
@@ -34,8 +34,10 @@ class ConsoleFrame(tkinter.Frame):
         super().__init__(master)
 
         self.configure(background='steelblue')
-        self.columnconfigure(0, weight=1, minsize=310)
+        self.columnconfigure(0, weight=1, minsize=150)
+        self.columnconfigure(1, weight=1, minsize=150)
         self.rowconfigure(0, weight=1, minsize=75)
+        self.rowconfigure(1, weight=1, minsize=75)
 
         self.pack(side='top', fill='both', expand='yes')
         self.create_widgets()
@@ -87,9 +89,9 @@ class PreviewFrame(tkinter.Frame):
 
         self.configure(background='steelblue')
 
-        self.columnconfigure(0, weight=1, minsize=150)
-        self.columnconfigure(1, weight=1, minsize=150)
-        self.rowconfigure(0, weight=1, minsize=245)
+        self.columnconfigure(0, weight=1, minsize=300)
+        self.columnconfigure(1, weight=1, minsize=300)
+        self.rowconfigure(0, weight=1, minsize=300)
 
         self.pack(side='top', fill='both', expand='yes')
         self.create_widgets()

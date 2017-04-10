@@ -4,8 +4,7 @@ import tkinter
 class FAQLabel(tkinter.Label):
     def __init__(self, master):
         super().__init__(master)
-        self['text'] = 'Добро пожаловать в SED-EN-SPAM!!1\n' \
-                       'Рассылка спама теперь еще веселее и продуктивнее.'
+        self['text'] = 'welcome'
         self['fg'] = 'black'
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'
