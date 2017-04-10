@@ -5,7 +5,6 @@ from source import labels, buttons
 class SetupFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
-
         self.configure(background='cyan3')
         self.columnconfigure(0, weight=1, minsize=225)
         self.columnconfigure(1, weight=1, minsize=75)
@@ -16,6 +15,7 @@ class SetupFrame(tkinter.Frame):
         self.create_widgets()
 
     def create_widgets(self):
+        # TODO: think about pep
         faq_label = labels.FAQLabel(self)
         settings_button = buttons.SettingsButton(self)
 
