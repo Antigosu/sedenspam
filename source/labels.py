@@ -24,7 +24,7 @@ class FAQLabel(tkinter.Label):
         )
 
 
-class StatusLabel(tkinter.Label):
+class UserChoiceLabel(tkinter.Label):
     def __init__(self, master, row):
         super().__init__(master)
         self.text = 'some text'

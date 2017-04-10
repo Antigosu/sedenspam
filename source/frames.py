@@ -16,17 +16,17 @@ class SetupFrame(tkinter.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        labels.FAQLabel(self)
-        buttons.SettingsButton(self)
+        faq_label = labels.FAQLabel(self)
+        settings_button = buttons.SettingsButton(self)
 
-        labels.StatusLabel(self, 1)
-        buttons.PathButton(self, 1)
+        email_choice_label = labels.UserChoiceLabel(self, 1)
+        email_choice_button = buttons.PathButton(self, 1)
 
-        labels.StatusLabel(self, 2)
-        buttons.PathButton(self, 2)
+        template_choice_label = labels.UserChoiceLabel(self, 2)
+        template_choice_button = buttons.PathButton(self, 2)
 
-        labels.StatusLabel(self, 3)
-        buttons.PathButton(self, 3)
+        database_choice_label = labels.UserChoiceLabel(self, 3)
+        database_choice_button = buttons.PathButton(self, 3)
 
 
 class ConsoleFrame(tkinter.Frame):
