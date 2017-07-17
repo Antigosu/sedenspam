@@ -1,5 +1,5 @@
 import tkinter
-import source.windows
+# import source.windows     # Just for now, uncomment after debug.
 
 
 class UserChoiceButton(tkinter.Button):
@@ -12,14 +12,14 @@ class UserChoiceButton(tkinter.Button):
         self['command'] = self.click
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1, # 1 - x
+            column=column, row=row, columnspan=1, rowspan=1,    # 1 - x
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
     def click(self):
         # source.windows.DialogWindow(self)
-        self.update_idletasks() # Temporary debug.
+        self.update_idletasks()     # Temporary debug.
         print(self.winfo_y())
         print(self.winfo_x())
 
@@ -34,14 +34,14 @@ class SettingsButton(tkinter.Button):
         self['command'] = self.click
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1, # 1 - 0
+            column=column, row=row, columnspan=1, rowspan=1,    # 1 - 0
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
     def click(self):
         # source.windows.DialogWindow(self)
-        self.update_idletasks() # Temporary debug.
+        self.update_idletasks()     # Temporary debug.
         print(self.winfo_y())
         print(self.winfo_x())
 
@@ -57,16 +57,17 @@ class OperationButton(tkinter.Button):
         self['command'] = self.click
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=2, # x - 0
+            column=column, row=row, columnspan=1, rowspan=2,    # x - 0
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
     def click(self):
         # source.windows.DialogWindow(self)
-        self.update_idletasks()  # Temporary debug.
+        self.update_idletasks()     # Temporary debug.
         print(self.winfo_y())
         print(self.winfo_x())
+
 
 class YesNoButton(tkinter.Button):
     pass
