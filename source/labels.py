@@ -2,7 +2,7 @@ import tkinter
 
 
 class FAQLabel(tkinter.Label):
-    def __init__(self, master):
+    def __init__(self, master, column, row):
         super().__init__(master)
         self['text'] = 'welcome'
         self['fg'] = 'black'
@@ -11,20 +11,14 @@ class FAQLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=0,
-            row=0,
-            columnspan=1,
-            rowspan=1,
-            padx=5,
-            pady=5,
-            ipadx=5,
-            ipady=5,
+            column=column, row=row, columnspan=1, rowspan=1, # 0 - 0
+            padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
 
 class UserChoiceLabel(tkinter.Label):
-    def __init__(self, master, row):
+    def __init__(self, master, column, row):
         super().__init__(master)
         self.text = 'some text'
         self['text'] = self.text
@@ -34,14 +28,8 @@ class UserChoiceLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=0,
-            row=row,
-            columnspan=1,
-            rowspan=1,
-            padx=5,
-            pady=5,
-            ipadx=5,
-            ipady=5,
+            column=column, row=row, columnspan=1, rowspan=1, # 0 - x
+            padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
@@ -50,7 +38,7 @@ class UserChoiceLabel(tkinter.Label):
 
 
 class ConsoleLabel(tkinter.Label):
-    def __init__(self, master):
+    def __init__(self, master, column, row):
         super().__init__(master)
         self.text = 'some text'
         self['text'] = self.text
@@ -60,14 +48,8 @@ class ConsoleLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=0,
-            row=0,
-            columnspan=2,
-            rowspan=2,
-            padx=5,
-            pady=5,
-            ipadx=5,
-            ipady=5,
+            column=column, row=row, columnspan=2, rowspan=2, # 0 - 0
+            padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
@@ -76,7 +58,7 @@ class ConsoleLabel(tkinter.Label):
 
 
 class PreviewLabel(tkinter.Label):
-    def __init__(self, master, column):
+    def __init__(self, master, column, row):
         super().__init__(master)
         self.text = 'some text'
         self['text'] = self.text
@@ -86,14 +68,8 @@ class PreviewLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=column,
-            row=0,
-            columnspan=1,
-            rowspan=1,
-            padx=5,
-            pady=5,
-            ipadx=5,
-            ipady=5,
+            column=column, row=row, columnspan=1, rowspan=1, # x - 0
+            padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
