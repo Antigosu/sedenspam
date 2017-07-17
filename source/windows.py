@@ -13,11 +13,9 @@ class Application(tkinter.Tk):
         self.configure(background='thistle4')
         self.minsize(width=600, height=600)
         self.center_application()
-        self.create_windows()
 
-    def create_windows(self):
-        frames.MainFrame(self)
-        frames.PreviewFrame(self)
+        self.mainFrame = frames.MainFrame(self)
+        self.previewFrame = frames.PreviewFrame(self)
 
     def center_application(self):
         width = self.winfo_screenwidth()
