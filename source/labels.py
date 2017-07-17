@@ -11,7 +11,7 @@ class FAQLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1,    # 0 - 0
+            column=column, row=row, columnspan=1, rowspan=1,
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
@@ -28,7 +28,7 @@ class UserChoiceLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1,    # 0 - x
+            column=column, row=row, columnspan=1, rowspan=1,
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
@@ -48,7 +48,7 @@ class ConsoleLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=column, row=row, columnspan=2, rowspan=2,    # 0 - 0
+            column=column, row=row, columnspan=2, rowspan=2,
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
@@ -68,7 +68,7 @@ class PreviewLabel(tkinter.Label):
         self['borderwidth'] = 1
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1,    # x - 0
+            column=column, row=row, columnspan=1, rowspan=1,
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
