@@ -38,7 +38,7 @@ class DialogWindow(tkinter.Frame):
         self.size = '200x150'
         self.master = master
         self.slave = tkinter.Toplevel(master)
-        self.slave.title('sedenspam')
+        self.slave.title('Settings')
         # self.slave.geometry(f'{self.size}+500+375')
         self.center_window()
 
