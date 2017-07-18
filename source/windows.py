@@ -32,15 +32,16 @@ class Email(tkinter.Tk):
     pass
 
 
-class DialogWindow(tkinter.Frame):
+class SettingsWindow(tkinter.Toplevel):
     def __init__(self, master):
         super().__init__(master)
-        self.size = '200x150'
-        self.master = master
-        self.slave = tkinter.Toplevel(master)
-        self.slave.title('Settings')
-        # self.slave.geometry(f'{self.size}+500+375')
+        self.size = '450x450'
+        # self.master = master
+        self.title('Settings')
+        # self.geometry(f'{self.size}+500+375')
         self.center_window()
+
+        self.settingsFrame = frames.SettingsFrame(self)
 
     def center_window(self):
         self.master.update_idletasks()
@@ -51,7 +52,7 @@ class DialogWindow(tkinter.Frame):
         y = int(h / 2 - 150 / 2)
         # x = w / 2 - size[0] / 2
         # y = h / 2 - size[1] / 2
-        self.slave.geometry(f'{self.size}+{x}+{y}')
+        self.geometry(f'{self.size}+{x}+{y}')
 
 
 class Settings(tkinter.Tk):

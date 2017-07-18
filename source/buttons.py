@@ -26,6 +26,9 @@ class UserChoiceButton(tkinter.Button):
         print(self.winfo_y())
         print(self.winfo_x())
 
+        # for future
+        # os.startfile(path, 'open')
+        # x = filedialog.askopenfilename(filetypes = (('.xls'), ('All files'))
 
 class SettingsButton(tkinter.Button):
     def __init__(self, master, column, row):
@@ -43,13 +46,88 @@ class SettingsButton(tkinter.Button):
         )
 
     def click(self):
-        source.windows.DialogWindow(self)
+        source.windows.SettingsWindow(self)
 
         # Temporary debug.
 
         # self.update_idletasks()
         # print(self.winfo_y())
         # print(self.winfo_x())
+
+
+class ColorButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self['text'] = 'sets'
+        self['fg'] = 'black',
+        self['bg'] = 'tan1',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        # source.windows.SettingsWindow(self)
+
+        # Temporary debug.
+
+        self.update_idletasks()
+        print(self.winfo_y())
+        print(self.winfo_x())
+
+
+class ViewButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self['text'] = 'sets'
+        self['fg'] = 'black',
+        self['bg'] = 'tan1',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        # source.windows.SettingsWindow(self)
+
+        # Temporary debug.
+
+        self.update_idletasks()
+        print(self.winfo_y())
+        print(self.winfo_x())
+
+
+class ConfirmButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self['text'] = 'sets'
+        self['fg'] = 'black',
+        self['bg'] = 'tan1',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        # source.windows.SettingsWindow(self)
+
+        # Temporary debug.
+
+        self.update_idletasks()
+        print(self.winfo_y())
+        print(self.winfo_x())
 
 
 class OperationButton(tkinter.Button):
@@ -69,7 +147,7 @@ class OperationButton(tkinter.Button):
         )
 
     def click(self):
-        # source.windows.DialogWindow(self)
+        # source.windows.SettingsWindow(self)
 
         # Temporary debug.
 
