@@ -46,15 +46,15 @@ class SetupFrame(tkinter.Frame):
 
         self.pack(side='left', fill='both', expand='yes')
 
-        self.faqInfo = labels.FAQLabel(master=self, column=0, row=0)
-        self.emailInfo = labels.UserChoiceLabel(master=self, column=0, row=1)
-        self.templateInfo = labels.UserChoiceLabel(master=self, column=0, row=2)
-        self.databaseInfo = labels.UserChoiceLabel(master=self, column=0, row=3)
+        self.faqLabel = labels.FAQLabel(master=self, column=0, row=0)
+        self.emailLabel = labels.UserChoiceLabel(master=self, column=0, row=1)
+        self.templateLabel = labels.UserChoiceLabel(master=self, column=0, row=2)
+        self.databaseLabel = labels.UserChoiceLabel(master=self, column=0, row=3)
 
-        self.settings = buttons.SettingsButton(master=self, column=1, row=0)
-        self.email = buttons.UserChoiceButton(master=self, column=1, row=1)
-        self.template = buttons.UserChoiceButton(master=self, column=1, row=2)
-        self.database = buttons.UserChoiceButton(master=self, column=1, row=3)
+        self.settingsButton = buttons.SettingsButton(master=self, column=1, row=0)
+        self.emailButton = buttons.UserChoiceButton(master=self, column=1, row=1)
+        self.templateButton = buttons.UserChoiceButton(master=self, column=1, row=2)
+        self.databaseButton = buttons.UserChoiceButton(master=self, column=1, row=3)
 
 
 class OperationFrame(tkinter.Frame):
