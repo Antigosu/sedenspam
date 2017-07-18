@@ -1,5 +1,5 @@
 import tkinter
-# import source.windows  # Just for now, uncomment after debug.
+import source.windows  # Just for now, uncomment after debug.
 
 
 class UserChoiceButton(tkinter.Button):
@@ -43,13 +43,13 @@ class SettingsButton(tkinter.Button):
         )
 
     def click(self):
-        # source.windows.DialogWindow(self)
+        source.windows.DialogWindow(self)
 
         # Temporary debug.
 
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+        # self.update_idletasks()
+        # print(self.winfo_y())
+        # print(self.winfo_x())
 
 
 class OperationButton(tkinter.Button):
