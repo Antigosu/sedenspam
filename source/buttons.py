@@ -156,5 +156,61 @@ class OperationButton(tkinter.Button):
         print(self.winfo_x())
 
 
-class YesNoButton(tkinter.Button):
-    pass
+class DeleteButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self.path = 'click'
+        self['text'] = self.path,
+        self['fg'] = 'black',
+        self['bg'] = 'springgreen3',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        pass
+
+
+class AddButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self.path = 'click'
+        self['text'] = self.path,
+        self['fg'] = 'black',
+        self['bg'] = 'springgreen3',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        pass
+
+
+class OkayButton(tkinter.Button):
+    def __init__(self, master, column, row):
+        super().__init__(master)
+        self.path = 'click'
+        self['text'] = self.path,
+        self['fg'] = 'black',
+        self['bg'] = 'springgreen3',
+        self['cursor'] = 'pirate',
+        self['command'] = self.click
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def click(self):
+        pass

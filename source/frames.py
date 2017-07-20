@@ -1,5 +1,5 @@
 import tkinter
-from source import labels, buttons
+from source import labels, buttons, listboxes
 
 
 class MainFrame(tkinter.Frame):
@@ -113,12 +113,15 @@ class EmailFrame(tkinter.Frame):
 
         self.configure(background='sienna1')  # Different colors for debug.
 
-        for col_index in range(6):
+        for col_index in range(3):
             self.columnconfigure(col_index, weight=1, minsize=150)
 
-        for row_index in range(6):
+        for row_index in range(2):
             self.rowconfigure(row_index, weight=1, minsize=75)
 
         self.pack(side='left', fill='both', expand='yes')
 
-        # self.colorLabel = labels.SettingsLabel(master=self, column=0, row=0)
+        self.emailList = listboxes.EmailListbox(master=self, column=0, row=0)
+        self.deleteButton = buttons.DeleteButton(master=self, column=0, row=1)
+        self.addButton = buttons.AddButton(master=self, column=1, row=1)
+        self.okayButton = buttons.OkayButton(master=self, column=2, row=1)
