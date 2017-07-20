@@ -18,13 +18,13 @@ class UserChoiceButton(tkinter.Button):
         )
 
     def click(self):
-        # source.windows.DialogWindow(self)
+        source.windows.EmailWindow(self)
 
         # Temporary debug.
 
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+        # self.update_idletasks()
+        # print(self.winfo_y())
+        # print(self.winfo_x())
 
         # for future
         # os.startfile(path, 'open')

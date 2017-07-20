@@ -105,3 +105,20 @@ class SettingsFrame(tkinter.Frame):
         self.confirmButton1 = buttons.ConfirmButton(master=self, column=0, row=3)
         self.confirmButton2 = buttons.ConfirmButton(master=self, column=1, row=3)
         self.confirmButton3 = buttons.ConfirmButton(master=self, column=2, row=3)
+
+
+class EmailFrame(tkinter.Frame):
+    def __init__(self, master):
+        super().__init__(master)
+
+        self.configure(background='sienna1')  # Different colors for debug.
+
+        for col_index in range(6):
+            self.columnconfigure(col_index, weight=1, minsize=150)
+
+        for row_index in range(6):
+            self.rowconfigure(row_index, weight=1, minsize=75)
+
+        self.pack(side='left', fill='both', expand='yes')
+
+        # self.colorLabel = labels.SettingsLabel(master=self, column=0, row=0)
