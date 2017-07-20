@@ -91,17 +91,17 @@ class SettingsFrame(tkinter.Frame):
         self.pack(side='left', fill='both', expand='yes')
 
         self.colorLabel = labels.SettingsLabel(master=self, column=0, row=0)
-        self.viewLabel = labels.SettingsLabel(master=self, column=0, row=2)
-        self.confirmLabel = labels.SettingsLabel(master=self, column=0, row=4)
+        # self.viewLabel = labels.SettingsLabel(master=self, column=0, row=2)
+        # self.confirmLabel = labels.SettingsLabel(master=self, column=0, row=4)
 
         self.colorButton1 = buttons.ColorButton(master=self, column=0, row=1)
         self.colorButton2 = buttons.ColorButton(master=self, column=1, row=1)
         self.colorButton3 = buttons.ColorButton(master=self, column=2, row=1)
 
-        self.viewButton1 = buttons.ViewButton(master=self, column=0, row=3)
-        self.viewButton2 = buttons.ViewButton(master=self, column=1, row=3)
-        self.viewButton3 = buttons.ViewButton(master=self, column=2, row=3)
+        self.viewButton1 = buttons.ViewButton(master=self, column=0, row=2)
+        self.viewButton2 = buttons.ViewButton(master=self, column=1, row=2)
+        self.viewButton3 = buttons.ViewButton(master=self, column=2, row=2)
 
-        self.confirmButton1 = buttons.ConfirmButton(master=self, column=0, row=5)
-        self.confirmButton2 = buttons.ConfirmButton(master=self, column=1, row=5)
-        self.confirmButton3 = buttons.ConfirmButton(master=self, column=2, row=5)
+        self.confirmButton1 = buttons.ConfirmButton(master=self, column=0, row=3)
+        self.confirmButton2 = buttons.ConfirmButton(master=self, column=1, row=3)
+        self.confirmButton3 = buttons.ConfirmButton(master=self, column=2, row=3)

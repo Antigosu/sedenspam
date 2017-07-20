@@ -80,7 +80,7 @@ class PreviewLabel(tkinter.Label):
 class SettingsLabel(tkinter.Label):
     def __init__(self, master, column, row):
         super().__init__(master)
-        self['text'] = 'welcome'
+        self['text'] = 'Choose your prefer color and view settings'
         self['fg'] = 'black'
         self['bg'] = 'bisque3'
         self['relief'] = 'raised'

@@ -35,7 +35,7 @@ class Email(tkinter.Tk):
 class SettingsWindow(tkinter.Toplevel):
     def __init__(self, master):
         super().__init__(master)
-        self.size = '450x450'
+        self.size = '450x300'
         # self.master = master
         self.title('Settings')
         # self.geometry(f'{self.size}+500+375')
