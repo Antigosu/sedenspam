@@ -51,16 +51,22 @@ class SettingsWindow(tkinter.Toplevel):
         self.geometry(f'{self.size}+{x}+{y}')
 
 
-class EmailWindow(tkinter.Toplevel):
-    def __init__(self, master):
+class BasicInputWindow(tkinter.Toplevel):
+    def __init__(self, master, data_type):
         super().__init__(master)
+        self.data_type = data_type
         self.size = '450x300'
         # self.master = master
-        self.title('Input your email')
+        self.title(f'Basic {self.data_type} information')
         # self.geometry(f'{self.size}+500+375')
         self.center_window()
 
-        self.emailFrame = frames.EmailFrame(self)
+        if self.data_type == 'email':
+            self.emailFrame = frames.BasicInputFrame(self, data_type)
+        elif self.data_type == 'template':
+            self.templateFrame = frames.BasicInputFrame(self, data_type)
+        elif self.data_type == 'database':
+            self.databaseFrame = frames.BasicInputFrame(self, data_type)
 
     def center_window(self):
         self.master.update_idletasks()

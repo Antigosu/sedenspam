@@ -52,9 +52,9 @@ class SetupFrame(tkinter.Frame):
         self.databaseLabel = labels.UserChoiceLabel(master=self, column=0, row=3)
 
         self.settingsButton = buttons.SettingsButton(master=self, column=1, row=0)
-        self.emailButton = buttons.UserChoiceButton(master=self, column=1, row=1)
-        self.templateButton = buttons.UserChoiceButton(master=self, column=1, row=2)
-        self.databaseButton = buttons.UserChoiceButton(master=self, column=1, row=3)
+        self.emailButton = buttons.UserChoiceButton(master=self, column=1, row=1, data_type='email')
+        self.templateButton = buttons.UserChoiceButton(master=self, column=1, row=2, data_type='template')
+        self.databaseButton = buttons.UserChoiceButton(master=self, column=1, row=3, data_type='database')
 
 
 class OperationFrame(tkinter.Frame):
@@ -107,10 +107,10 @@ class SettingsFrame(tkinter.Frame):
         self.confirmButton3 = buttons.ConfirmButton(master=self, column=2, row=3)
 
 
-class EmailFrame(tkinter.Frame):
-    def __init__(self, master):
+class BasicInputFrame(tkinter.Frame):
+    def __init__(self, master, data_type):
         super().__init__(master)
-
+        self.data_type = data_type
         self.configure(background='sienna1')  # Different colors for debug.
 
         for col_index in range(3):
@@ -121,7 +121,13 @@ class EmailFrame(tkinter.Frame):
 
         self.pack(side='left', fill='both', expand='yes')
 
-        self.emailList = listboxes.EmailListbox(master=self, column=0, row=0)
+        if self.data_type == 'email':
+            self.emailList = listboxes.BasicListbox(master=self, column=0, row=0, data_type=self.data_type)
+        elif self.data_type == 'template':
+            self.emailList = listboxes.BasicListbox(master=self, column=0, row=0, data_type=self.data_type)
+        elif self.data_type == 'database':
+            self.emailList = listboxes.BasicListbox(master=self, column=0, row=0, data_type=self.data_type)
+
         self.deleteButton = buttons.DeleteButton(master=self, column=0, row=1)
         self.addButton = buttons.AddButton(master=self, column=1, row=1)
         self.okayButton = buttons.OkayButton(master=self, column=2, row=1)

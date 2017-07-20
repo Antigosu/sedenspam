@@ -3,8 +3,9 @@ import source.windows  # Just for now, uncomment after debug.
 
 
 class UserChoiceButton(tkinter.Button):
-    def __init__(self, master, column, row):
+    def __init__(self, master, column, row, data_type):
         super().__init__(master)
+        self.data_type = data_type
         self['text'] = 'click',
         self['fg'] = 'black',
         self['bg'] = 'tan1',
@@ -18,7 +19,8 @@ class UserChoiceButton(tkinter.Button):
         )
 
     def click(self):
-        source.windows.EmailWindow(self)
+        source.windows.BasicInputWindow(self, data_type=self.data_type)
+
 
         # Temporary debug.
 

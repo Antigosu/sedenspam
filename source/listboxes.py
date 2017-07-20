@@ -1,17 +1,33 @@
 import tkinter
 
 
-class EmailListbox(tkinter.Listbox):
-    def __init__(self, master, column, row):
+class BasicListbox(tkinter.Listbox):
+    def __init__(self, master, column, row, data_type):
         super().__init__(master)
-
+        self.data_type = data_type
         self.emailList = [
-            # temporary for debug
+            # Temporary, just for debug.
             'avorochalkin@en-pro.ru',
             'avorochalkin@en-pro.ru',
             'avorochalkin@en-pro.ru',
             'avorochalkin@en-pro.ru',
-            'avorochalkin@en-pro.ru',
+            'avorochalkin@en-pro.ru'
+        ]
+        self.templateList = [
+            # Temporary, just for debug.
+            'sedmax_template_1',
+            'sedmax_template_2',
+            'sedmax_template_3',
+            'sedmax_template_4',
+            'sedmax_template_5'
+        ]
+        self.databaseList = [
+            # Temporary, just for debug.
+            'Vologda',
+            'Novocherkassk',
+            'Moscow',
+            'Ufa',
+            'London is a capital of GB'
         ]
 
         self.grid(
@@ -20,6 +36,13 @@ class EmailListbox(tkinter.Listbox):
             sticky='WENS'
         )
 
-        for email in self.emailList:
-            self.insert('end', email)
-
+        # Temporary, just for debug.
+        if self.data_type == 'email':
+            for email in self.emailList:
+                self.insert('end', email)
+        elif self.data_type == 'template':
+            for template in self.templateList:
+                self.insert('end', template)
+        elif self.data_type == 'database':
+            for database in self.databaseList:
+                self.insert('end', database)
