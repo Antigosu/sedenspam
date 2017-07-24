@@ -82,10 +82,10 @@ class SettingsFrame(tkinter.Frame):
 
         self.configure(background='sienna1')  # Different colors for debug.
 
-        for col_index in range(6):
+        for col_index in range(4):
             self.columnconfigure(col_index, weight=1, minsize=150)
 
-        for row_index in range(6):
+        for row_index in range(4):
             self.rowconfigure(row_index, weight=1, minsize=75)
 
         self.pack(side='left', fill='both', expand='yes')
@@ -94,17 +94,14 @@ class SettingsFrame(tkinter.Frame):
         # self.viewLabel = labels.SettingsLabel(master=self, column=0, row=2)
         # self.confirmLabel = labels.SettingsLabel(master=self, column=0, row=4)
 
-        self.colorButton1 = buttons.ColorButton(master=self, column=0, row=1, color='blue')
-        self.colorButton2 = buttons.ColorButton(master=self, column=1, row=1, color='orange')
-        self.colorButton3 = buttons.ColorButton(master=self, column=2, row=1, color='black')
+        self.colorButton1 = buttons.ColorButton(master=self, column=0, row=1, color='red')
+        self.colorButton3 = buttons.ColorButton(master=self, column=1, row=1, color='black')
 
-        self.viewButton1 = buttons.ViewButton(master=self, column=0, row=2, text='MAXIMUM')
-        self.viewButton2 = buttons.ViewButton(master=self, column=1, row=2, text='MEDIUM')
-        self.viewButton3 = buttons.ViewButton(master=self, column=2, row=2, text='MINIMAL')
+        self.viewButton1 = buttons.ViewButton(master=self, column=0, row=2, text='WITH\nPREVIEW')
+        self.viewButton2 = buttons.ViewButton(master=self, column=1, row=2, text='WITHOUT\nPREVIEW')
 
         self.confirmButton1 = buttons.ConfirmButton(master=self, column=0, row=3)
         self.confirmButton2 = buttons.ConfirmButton(master=self, column=1, row=3)
-        self.confirmButton3 = buttons.ConfirmButton(master=self, column=2, row=3)
 
 
 class BasicInputFrame(tkinter.Frame):
