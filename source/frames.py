@@ -89,6 +89,9 @@ class SettingsFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
 
+        self.color = ''
+        self.view = ''
+
         self.configure(background='sienna1')  # Different colors for debug.
 
         for col_index in range(4):
@@ -99,16 +102,26 @@ class SettingsFrame(tkinter.Frame):
 
         self.color_label = labels.SettingsLabel(master=self, column=0, row=0)
 
-        self.color_button1 = buttons.ColorButton(master=self, column=0, row=1, color='red')
-        self.color_button2 = buttons.ColorButton(master=self, column=1, row=1, color='black')
+        self.light_color_button = buttons.ColorButton(master=self, column=0, row=1, color='red')
+        self.dark_color_button = buttons.ColorButton(master=self, column=1, row=1, color='black')
 
-        self.view_button1 = buttons.ViewButton(master=self, column=0, row=2, text='WITH\nPREVIEW')
-        self.view_button2 = buttons.ViewButton(master=self, column=1, row=2, text='WITHOUT\nPREVIEW')
+        self.with_view_button = buttons.ViewButton(master=self, column=0, row=2, text='WITH\nPREVIEW')
+        self.without_view_button = buttons.ViewButton(master=self, column=1, row=2, text='WITHOUT\nPREVIEW')
 
-        self.confirm_button1 = buttons.ConfirmButton(master=self, column=0, row=3)
-        self.confirm_button2 = buttons.ConfirmButton(master=self, column=1, row=3)
+        self.apply_button = buttons.ApplyButton(master=self, column=0, row=3)
+        self.cancel_button = buttons.CancelButton(master=self, column=1, row=3)
 
         self.pack(side='left', fill='both', expand='yes')
+
+    def apply(self):
+
+        print(self.color)
+        print(self.view)
+
+    def cancel(self):
+
+        print('CANCEL')
+        self.master.destroy()
 
 
 class BasicInputFrame(tkinter.Frame):

@@ -39,12 +39,16 @@ class SettingsWindow(tkinter.Toplevel):
         super().__init__(master)
 
         self.size = '300x300'
+        self.resizable(0, 0)
         # self.master = master
         self.title('Settings')
         # self.geometry(f'{self.size}+500+375')
         self.center_window()
 
         self.settingsFrame = frames.SettingsFrame(self)
+
+        # self.focus_set()
+        self.grab_set()
 
     def center_window(self):
 

@@ -40,7 +40,7 @@ class SettingsButton(tkinter.Button):
     def __init__(self, master, column, row):
         super().__init__(master)
 
-        self['text'] = 'sets'
+        self['text'] = 'Settings'
         self['fg'] = 'black',
         self['bg'] = 'bisque3',
         self['cursor'] = 'pirate',
@@ -72,6 +72,8 @@ class ColorButton(tkinter.Button):
         self['bg'] = color,
         self['cursor'] = 'pirate',
         self['command'] = self.click
+        self['relief'] = 'raised'
+        self['borderwidth'] = 3
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -81,13 +83,7 @@ class ColorButton(tkinter.Button):
 
     def click(self):
 
-        # source.windows.SettingsWindow(self)
-
-        # Temporary debug.
-
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+        self.master.color = self['bg']
 
 
 class ViewButton(tkinter.Button):
@@ -97,7 +93,7 @@ class ViewButton(tkinter.Button):
 
         self['text'] = text
         self['fg'] = 'black',
-        self['bg'] = 'tan1',
+        self['bg'] = 'skyblue',
         self['cursor'] = 'pirate',
         self['command'] = self.click
 
@@ -109,25 +105,19 @@ class ViewButton(tkinter.Button):
 
     def click(self):
 
-        # source.windows.SettingsWindow(self)
-
-        # Temporary debug.
-
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+        self.master.view = self['text']
 
 
-class ConfirmButton(tkinter.Button):
+class ApplyButton(tkinter.Button):
 
     def __init__(self, master, column, row):
         super().__init__(master)
 
-        self['text'] = 'sets'
+        self['text'] = 'APPLY'
         self['fg'] = 'black',
         self['bg'] = 'tan1',
         self['cursor'] = 'pirate',
-        self['command'] = self.click
+        self['command'] = self.apply
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -135,15 +125,29 @@ class ConfirmButton(tkinter.Button):
             sticky='WENS'
         )
 
-    def click(self):
+    def apply(self):
+        self.master.apply()
 
-        # source.windows.SettingsWindow(self)
 
-        # Temporary debug.
+class CancelButton(tkinter.Button):
 
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+    def __init__(self, master, column, row):
+        super().__init__(master)
+
+        self['text'] = 'CANCEL'
+        self['fg'] = 'black',
+        self['bg'] = 'tan1',
+        self['cursor'] = 'pirate',
+        self['command'] = self.cancel
+
+        self.grid(
+            column=column, row=row, columnspan=1, rowspan=1,
+            padx=5, pady=5, ipadx=5, ipady=5,
+            sticky='WENS'
+        )
+
+    def cancel(self):
+        self.master.cancel()
 
 
 class OperationButton(tkinter.Button):
