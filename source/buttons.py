@@ -58,11 +58,10 @@ class SettingsButton(tkinter.Button):
 
 
 class ColorButton(tkinter.Button):
-    def __init__(self, master, column, row):
+    def __init__(self, master, column, row, color):
         super().__init__(master)
-        self['text'] = 'sets'
         self['fg'] = 'black',
-        self['bg'] = 'tan1',
+        self['bg'] = color,
         self['cursor'] = 'pirate',
         self['command'] = self.click
 

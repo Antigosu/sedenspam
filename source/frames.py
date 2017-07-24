@@ -94,9 +94,9 @@ class SettingsFrame(tkinter.Frame):
         # self.viewLabel = labels.SettingsLabel(master=self, column=0, row=2)
         # self.confirmLabel = labels.SettingsLabel(master=self, column=0, row=4)
 
-        self.colorButton1 = buttons.ColorButton(master=self, column=0, row=1)
-        self.colorButton2 = buttons.ColorButton(master=self, column=1, row=1)
-        self.colorButton3 = buttons.ColorButton(master=self, column=2, row=1)
+        self.colorButton1 = buttons.ColorButton(master=self, column=0, row=1, color='blue')
+        self.colorButton2 = buttons.ColorButton(master=self, column=1, row=1, color='orange')
+        self.colorButton3 = buttons.ColorButton(master=self, column=2, row=1, color='black')
 
         self.viewButton1 = buttons.ViewButton(master=self, column=0, row=2)
         self.viewButton2 = buttons.ViewButton(master=self, column=1, row=2)
