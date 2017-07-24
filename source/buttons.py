@@ -21,7 +21,6 @@ class UserChoiceButton(tkinter.Button):
     def click(self):
         source.windows.BasicInputWindow(self, data_type=self.data_type)
 
-
         # Temporary debug.
 
         # self.update_idletasks()
@@ -31,6 +30,7 @@ class UserChoiceButton(tkinter.Button):
         # for future
         # os.startfile(path, 'open')
         # x = filedialog.askopenfilename(filetypes = (('.xls'), ('All files'))
+
 
 class SettingsButton(tkinter.Button):
     def __init__(self, master, column, row):
@@ -82,9 +82,10 @@ class ColorButton(tkinter.Button):
 
 
 class ViewButton(tkinter.Button):
-    def __init__(self, master, column, row):
+    def __init__(self, master, column, row, text):
         super().__init__(master)
-        self['text'] = 'sets'
+
+        self['text'] = text
         self['fg'] = 'black',
         self['bg'] = 'tan1',
         self['cursor'] = 'pirate',
