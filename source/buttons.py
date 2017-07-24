@@ -1,10 +1,12 @@
 import tkinter
-import source.windows  # Just for now, uncomment after debug.
+import source.windows
 
 
 class UserChoiceButton(tkinter.Button):
+
     def __init__(self, master, column, row, data_type):
         super().__init__(master)
+
         self.data_type = data_type
         self['text'] = 'click',
         self['fg'] = 'black',
@@ -19,6 +21,7 @@ class UserChoiceButton(tkinter.Button):
         )
 
     def click(self):
+
         source.windows.BasicInputWindow(self, data_type=self.data_type)
 
         # Temporary debug.
@@ -33,8 +36,10 @@ class UserChoiceButton(tkinter.Button):
 
 
 class SettingsButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self['text'] = 'sets'
         self['fg'] = 'black',
         self['bg'] = 'bisque3',
@@ -48,6 +53,7 @@ class SettingsButton(tkinter.Button):
         )
 
     def click(self):
+
         source.windows.SettingsWindow(self)
 
         # Temporary debug.
@@ -58,8 +64,10 @@ class SettingsButton(tkinter.Button):
 
 
 class ColorButton(tkinter.Button):
+
     def __init__(self, master, column, row, color):
         super().__init__(master)
+
         self['fg'] = 'black',
         self['bg'] = color,
         self['cursor'] = 'pirate',
@@ -72,6 +80,7 @@ class ColorButton(tkinter.Button):
         )
 
     def click(self):
+
         # source.windows.SettingsWindow(self)
 
         # Temporary debug.
@@ -82,6 +91,7 @@ class ColorButton(tkinter.Button):
 
 
 class ViewButton(tkinter.Button):
+
     def __init__(self, master, column, row, text):
         super().__init__(master)
 
@@ -98,6 +108,7 @@ class ViewButton(tkinter.Button):
         )
 
     def click(self):
+
         # source.windows.SettingsWindow(self)
 
         # Temporary debug.
@@ -108,8 +119,10 @@ class ViewButton(tkinter.Button):
 
 
 class ConfirmButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self['text'] = 'sets'
         self['fg'] = 'black',
         self['bg'] = 'tan1',
@@ -123,6 +136,7 @@ class ConfirmButton(tkinter.Button):
         )
 
     def click(self):
+
         # source.windows.SettingsWindow(self)
 
         # Temporary debug.
@@ -133,8 +147,10 @@ class ConfirmButton(tkinter.Button):
 
 
 class OperationButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
@@ -149,6 +165,7 @@ class OperationButton(tkinter.Button):
         )
 
     def click(self):
+
         # source.windows.SettingsWindow(self)
 
         # Temporary debug.
@@ -159,8 +176,10 @@ class OperationButton(tkinter.Button):
 
 
 class DeleteButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
@@ -175,12 +194,15 @@ class DeleteButton(tkinter.Button):
         )
 
     def click(self):
+
         pass
 
 
 class AddButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
@@ -195,12 +217,15 @@ class AddButton(tkinter.Button):
         )
 
     def click(self):
+
         pass
 
 
 class OkayButton(tkinter.Button):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.path = 'click'
         self['text'] = self.path,
         self['fg'] = 'black',
@@ -215,4 +240,5 @@ class OkayButton(tkinter.Button):
         )
 
     def click(self):
+
         pass

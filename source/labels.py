@@ -2,8 +2,10 @@ import tkinter
 
 
 class FAQLabel(tkinter.Label):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self['text'] = 'welcome'
         self['fg'] = 'black'
         self['bg'] = 'bisque3'
@@ -18,8 +20,10 @@ class FAQLabel(tkinter.Label):
 
 
 class UserChoiceLabel(tkinter.Label):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
@@ -34,12 +38,15 @@ class UserChoiceLabel(tkinter.Label):
         )
 
     def change_status(self):
+
         pass
 
 
 class ConsoleLabel(tkinter.Label):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
@@ -54,12 +61,15 @@ class ConsoleLabel(tkinter.Label):
         )
 
     def change_status(self):
+
         pass
 
 
 class PreviewLabel(tkinter.Label):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self.text = 'some text'
         self['text'] = self.text
         self['fg'] = 'black'
@@ -74,12 +84,15 @@ class PreviewLabel(tkinter.Label):
         )
 
     def change_status(self):
+
         pass
 
 
 class SettingsLabel(tkinter.Label):
+
     def __init__(self, master, column, row):
         super().__init__(master)
+
         self['text'] = 'Choose your prefer color and view settings'
         self['fg'] = 'black'
         self['bg'] = 'bisque3'
