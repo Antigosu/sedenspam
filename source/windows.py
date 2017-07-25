@@ -43,6 +43,7 @@ class SettingsWindow(tkinter.Toplevel):
         # self.master = master
         self.title('Settings')
         # self.geometry(f'{self.size}+500+375')
+        self.wm_iconbitmap('..\images\sedenspam.ico')
         self.center_window()
 
         self.settingsFrame = frames.SettingsFrame(self)
@@ -77,6 +78,7 @@ class BasicInputWindow(tkinter.Toplevel):
         # self.master = master
         self.title(f'Basic {self.data_type} information')
         # self.geometry(f'{self.size}+500+375')
+        self.wm_iconbitmap('..\images\sedenspam.ico')
         self.center_window()
 
         if self.data_type == 'email':
