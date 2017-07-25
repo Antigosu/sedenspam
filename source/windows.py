@@ -1,11 +1,13 @@
 import tkinter
-from source import frames
+from source import frames, settings
 
 
 class Application(tkinter.Tk):
 
     def __init__(self):
         super().__init__()
+
+        self.settings = settings.Settings()
 
         self.title('sedenspam')
         self.x = '100'
