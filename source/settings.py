@@ -5,19 +5,17 @@ import json
 
 class Settings:
 
+    current_settings = None
+
     def __init__(self):
 
         self.settings_directory = os.path.expanduser('~') + '/.sedenspam'
         self.settings_file = self.settings_directory + '/settings.json'
         self.__create()
 
+        # Cache init.
         with open(self.settings_file) as file:
-            self.settings = json.load(file)
-
-        print(self.settings)
-
-        self.text_color = self.settings['text_color']
-        self.is_preview = 1
+            Settings.current_settings = json.load(file)
 
     def __create(self):
 

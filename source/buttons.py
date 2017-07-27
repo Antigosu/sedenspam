@@ -1,5 +1,5 @@
 import tkinter
-import source.windows
+from source import windows, settings
 
 
 class UserChoiceButton(tkinter.Button):
@@ -9,10 +9,16 @@ class UserChoiceButton(tkinter.Button):
 
         self.data_type = data_type
         self['text'] = 'click',
-        self['fg'] = 'black',
-        self['bg'] = 'tan1',
+        self['foreground'] = settings.Settings.current_settings['UserChoiceButton']['foreground'],
+        self['background'] = 'tan1',
         self['cursor'] = 'pirate',
         self['command'] = self.click
+        self['activeforeground'] = 'blue',
+        self['activebackground'] = 'tan1',
+        self['borderwidth'] = '3',
+        self['state'] = 'normal',
+        self['highlightcolor'] = 'red',
+        self['overrelief'] = 'ridge'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -22,7 +28,7 @@ class UserChoiceButton(tkinter.Button):
 
     def click(self):
 
-        source.windows.BasicInputWindow(self, data_type=self.data_type)
+        windows.BasicInputWindow(self, data_type=self.data_type)
 
         # Temporary debug.
 
@@ -54,7 +60,7 @@ class SettingsButton(tkinter.Button):
 
     def click(self):
 
-        source.windows.SettingsWindow(self)
+        windows.SettingsWindow(self)
 
         # Temporary debug.
 

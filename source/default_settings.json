@@ -1,3 +1,14 @@
 {
-  "text_color": "black"
+  "UserChoiceButton": {
+    "foreground": "black",
+    "background": "tan1",
+    "activeforeground": "black",
+    "activebackground": "black",
+    "borderwidth": 1,
+    "cursor": "pirate",
+    "state": "normal",
+    "font": "",
+    "highlightcolor": "black",
+    "overrelief": "sunken"
+  }
 }
