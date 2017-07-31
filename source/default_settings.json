@@ -2,13 +2,16 @@
   "UserChoiceButton": {
     "foreground": "black",
     "background": "tan1",
-    "activeforeground": "black",
-    "activebackground": "black",
-    "borderwidth": 1,
-    "cursor": "pirate",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "bold italic"],
     "state": "normal",
-    "font": "",
-    "highlightcolor": "black",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
     "overrelief": "sunken"
   }
 }
