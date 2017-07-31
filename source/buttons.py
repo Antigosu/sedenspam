@@ -8,17 +8,21 @@ class UserChoiceButton(tkinter.Button):
         super().__init__(master)
 
         self.data_type = data_type
-        self['text'] = 'click',
-        self['foreground'] = settings.Settings.current_settings['UserChoiceButton']['foreground'],
-        self['background'] = 'tan1',
-        self['cursor'] = 'pirate',
+        self['text'] = 'click'
         self['command'] = self.click
-        self['activeforeground'] = 'blue',
-        self['activebackground'] = 'tan1',
-        self['borderwidth'] = '3',
-        self['state'] = 'normal',
-        self['highlightcolor'] = 'red',
-        self['overrelief'] = 'ridge'
+        self.configure(
+            foreground=settings.Settings.current_settings['UserChoiceButton']['foreground'],
+            background=settings.Settings.current_settings['UserChoiceButton']['background'],
+            borderwidth=settings.Settings.current_settings['UserChoiceButton']['borderwidth'],
+            font=settings.Settings.current_settings['UserChoiceButton']['font'],
+            state=settings.Settings.current_settings['UserChoiceButton']['state'],
+            cursor=settings.Settings.current_settings['UserChoiceButton']['cursor'],
+            activeforeground=settings.Settings.current_settings['UserChoiceButton']['activeforeground'],
+            activebackground=settings.Settings.current_settings['UserChoiceButton']['activebackground'],
+            highlightcolor=settings.Settings.current_settings['UserChoiceButton']['highlightcolor'],
+            overrelief=settings.Settings.current_settings['UserChoiceButton']['overrelief']
+        )
+
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
