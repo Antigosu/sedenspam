@@ -6,7 +6,7 @@
     "font": [
       "Helvetica",
       "10",
-      "bold"],
+      "normal"],
     "state": "normal",
     "cursor": "pirate",
     "activeforeground": "blue",
@@ -22,7 +22,7 @@
     "font": [
       "Helvetica",
       "10",
-      "bold"],
+      "normal"],
     "state": "normal",
     "cursor": "pirate",
     "activeforeground": "blue",
@@ -38,7 +38,119 @@
     "font": [
       "Helvetica",
       "10",
-      "bold"],
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "ViewButton": {
+    "foreground": "black",
+    "background": "skyblue",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "ApplyButton": {
+    "foreground": "black",
+    "background": "tan1",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "CancelButton": {
+    "foreground": "black",
+    "background": "tan1",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "OperationButton": {
+    "foreground": "black",
+    "background": "springgreen3",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "DeleteButton": {
+    "foreground": "black",
+    "background": "springgreen3",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "AddButton": {
+    "foreground": "black",
+    "background": "springgreen3",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "OkayButton": {
+    "foreground": "black",
+    "background": "springgreen3",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "normal"],
     "state": "normal",
     "cursor": "pirate",
     "activeforeground": "blue",
