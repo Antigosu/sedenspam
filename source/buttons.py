@@ -8,8 +8,6 @@ class UserChoiceButton(tkinter.Button):
         super().__init__(master)
 
         self.data_type = data_type
-        self['text'] = 'click'
-        self['command'] = self.click
         self.configure(
             foreground=settings.Settings.current_settings['UserChoiceButton']['foreground'],
             background=settings.Settings.current_settings['UserChoiceButton']['background'],
@@ -23,6 +21,8 @@ class UserChoiceButton(tkinter.Button):
             overrelief=settings.Settings.current_settings['UserChoiceButton']['overrelief']
         )
 
+        self['text'] = 'click'
+        self['command'] = self.click
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -67,6 +67,7 @@ class SettingsButton(tkinter.Button):
         windows.SettingsWindow(self)
 
         # Temporary debug.
+        settings.Settings.update()
 
         # self.update_idletasks()
         # print(self.winfo_y())
