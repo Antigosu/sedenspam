@@ -10,16 +10,16 @@ class UserChoiceButton(tkinter.Button):
 
         self.data_type = data_type
         self.configure(
-            font=Settings.current_settings['UserChoiceButton']['font'],
-            state=Settings.current_settings['UserChoiceButton']['state'],
-            cursor=Settings.current_settings['UserChoiceButton']['cursor'],
-            overrelief=Settings.current_settings['UserChoiceButton']['overrelief'],
-            background=Settings.current_settings['UserChoiceButton']['background'],
-            foreground=Settings.current_settings['UserChoiceButton']['foreground'],
-            borderwidth=Settings.current_settings['UserChoiceButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['UserChoiceButton']['highlightcolor'],
-            activebackground=Settings.current_settings['UserChoiceButton']['activebackground'],
-            activeforeground=Settings.current_settings['UserChoiceButton']['activeforeground'],
+            font=Settings.current_settings['UserChoiceButton']['font'][Settings.theme],
+            state=Settings.current_settings['UserChoiceButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['UserChoiceButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['UserChoiceButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['UserChoiceButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['UserChoiceButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['UserChoiceButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['UserChoiceButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['UserChoiceButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['UserChoiceButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'click'
@@ -46,16 +46,16 @@ class SettingsButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['SettingsButton']['font'],
-            state=Settings.current_settings['SettingsButton']['state'],
-            cursor=Settings.current_settings['SettingsButton']['cursor'],
-            overrelief=Settings.current_settings['SettingsButton']['overrelief'],
-            background=Settings.current_settings['SettingsButton']['background'],
-            foreground=Settings.current_settings['SettingsButton']['foreground'],
-            borderwidth=Settings.current_settings['SettingsButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['SettingsButton']['highlightcolor'],
-            activebackground=Settings.current_settings['SettingsButton']['activebackground'],
-            activeforeground=Settings.current_settings['SettingsButton']['activeforeground'],
+            font=Settings.current_settings['SettingsButton']['font'][Settings.theme],
+            state=Settings.current_settings['SettingsButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['SettingsButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['SettingsButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['SettingsButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['SettingsButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['SettingsButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['SettingsButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['SettingsButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['SettingsButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'Settings'
@@ -85,16 +85,16 @@ class ColorButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['ColorButton']['font'],
-            state=Settings.current_settings['ColorButton']['state'],
-            cursor=Settings.current_settings['ColorButton']['cursor'],
-            overrelief=Settings.current_settings['ColorButton']['overrelief'],
-            background=Settings.current_settings['ColorButton']['background'],
-            foreground=Settings.current_settings['ColorButton']['foreground'],
-            borderwidth=Settings.current_settings['ColorButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['ColorButton']['highlightcolor'],
-            activebackground=Settings.current_settings['ColorButton']['activebackground'],
-            activeforeground=Settings.current_settings['ColorButton']['activeforeground'],
+            font=Settings.current_settings['ColorButton']['font'][Settings.theme],
+            state=Settings.current_settings['ColorButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['ColorButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['ColorButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['ColorButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['ColorButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['ColorButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['ColorButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['ColorButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['ColorButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'Settings'
@@ -117,16 +117,16 @@ class ViewButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['ViewButton']['font'],
-            state=Settings.current_settings['ViewButton']['state'],
-            cursor=Settings.current_settings['ViewButton']['cursor'],
-            overrelief=Settings.current_settings['ViewButton']['overrelief'],
-            background=Settings.current_settings['ViewButton']['background'],
-            foreground=Settings.current_settings['ViewButton']['foreground'],
-            borderwidth=Settings.current_settings['ViewButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['ViewButton']['highlightcolor'],
-            activebackground=Settings.current_settings['ViewButton']['activebackground'],
-            activeforeground=Settings.current_settings['ViewButton']['activeforeground'],
+            font=Settings.current_settings['ViewButton']['font'][Settings.theme],
+            state=Settings.current_settings['ViewButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['ViewButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['ViewButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['ViewButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['ViewButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['ViewButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['ViewButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['ViewButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['ViewButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = text
@@ -149,16 +149,16 @@ class ApplyButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['ApplyButton']['font'],
-            state=Settings.current_settings['ApplyButton']['state'],
-            cursor=Settings.current_settings['ApplyButton']['cursor'],
-            overrelief=Settings.current_settings['ApplyButton']['overrelief'],
-            background=Settings.current_settings['ApplyButton']['background'],
-            foreground=Settings.current_settings['ApplyButton']['foreground'],
-            borderwidth=Settings.current_settings['ApplyButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['ApplyButton']['highlightcolor'],
-            activebackground=Settings.current_settings['ApplyButton']['activebackground'],
-            activeforeground=Settings.current_settings['ApplyButton']['activeforeground'],
+            font=Settings.current_settings['ApplyButton']['font'][Settings.theme],
+            state=Settings.current_settings['ApplyButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['ApplyButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['ApplyButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['ApplyButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['ApplyButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['ApplyButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['ApplyButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['ApplyButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['ApplyButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'APPLY'
@@ -180,16 +180,16 @@ class CancelButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['CancelButton']['font'],
-            state=Settings.current_settings['CancelButton']['state'],
-            cursor=Settings.current_settings['CancelButton']['cursor'],
-            overrelief=Settings.current_settings['CancelButton']['overrelief'],
-            background=Settings.current_settings['CancelButton']['background'],
-            foreground=Settings.current_settings['CancelButton']['foreground'],
-            borderwidth=Settings.current_settings['CancelButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['CancelButton']['highlightcolor'],
-            activebackground=Settings.current_settings['CancelButton']['activebackground'],
-            activeforeground=Settings.current_settings['CancelButton']['activeforeground'],
+            font=Settings.current_settings['CancelButton']['font'][Settings.theme],
+            state=Settings.current_settings['CancelButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['CancelButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['CancelButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['CancelButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['CancelButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['CancelButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['CancelButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['CancelButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['CancelButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'CANCEL'
@@ -211,16 +211,16 @@ class OperationButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['OperationButton']['font'],
-            state=Settings.current_settings['OperationButton']['state'],
-            cursor=Settings.current_settings['OperationButton']['cursor'],
-            overrelief=Settings.current_settings['OperationButton']['overrelief'],
-            background=Settings.current_settings['OperationButton']['background'],
-            foreground=Settings.current_settings['OperationButton']['foreground'],
-            borderwidth=Settings.current_settings['OperationButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['OperationButton']['highlightcolor'],
-            activebackground=Settings.current_settings['OperationButton']['activebackground'],
-            activeforeground=Settings.current_settings['OperationButton']['activeforeground'],
+            font=Settings.current_settings['OperationButton']['font'][Settings.theme],
+            state=Settings.current_settings['OperationButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['OperationButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['OperationButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['OperationButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['OperationButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['OperationButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['OperationButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['OperationButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['OperationButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'click'
@@ -249,16 +249,16 @@ class DeleteButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['DeleteButton']['font'],
-            state=Settings.current_settings['DeleteButton']['state'],
-            cursor=Settings.current_settings['DeleteButton']['cursor'],
-            overrelief=Settings.current_settings['DeleteButton']['overrelief'],
-            background=Settings.current_settings['DeleteButton']['background'],
-            foreground=Settings.current_settings['DeleteButton']['foreground'],
-            borderwidth=Settings.current_settings['DeleteButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['DeleteButton']['highlightcolor'],
-            activebackground=Settings.current_settings['DeleteButton']['activebackground'],
-            activeforeground=Settings.current_settings['DeleteButton']['activeforeground'],
+            font=Settings.current_settings['DeleteButton']['font'][Settings.theme],
+            state=Settings.current_settings['DeleteButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['DeleteButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['DeleteButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['DeleteButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['DeleteButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['DeleteButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['DeleteButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['DeleteButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['DeleteButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'click'
@@ -281,16 +281,16 @@ class AddButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['AddButton']['font'],
-            state=Settings.current_settings['AddButton']['state'],
-            cursor=Settings.current_settings['AddButton']['cursor'],
-            overrelief=Settings.current_settings['AddButton']['overrelief'],
-            background=Settings.current_settings['AddButton']['background'],
-            foreground=Settings.current_settings['AddButton']['foreground'],
-            borderwidth=Settings.current_settings['AddButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['AddButton']['highlightcolor'],
-            activebackground=Settings.current_settings['AddButton']['activebackground'],
-            activeforeground=Settings.current_settings['AddButton']['activeforeground'],
+            font=Settings.current_settings['AddButton']['font'][Settings.theme],
+            state=Settings.current_settings['AddButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['AddButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['AddButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['AddButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['AddButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['AddButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['AddButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['AddButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['AddButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'click'
@@ -313,16 +313,16 @@ class OkayButton(tkinter.Button):
         super().__init__(master)
 
         self.configure(
-            font=Settings.current_settings['OkayButton']['font'],
-            state=Settings.current_settings['OkayButton']['state'],
-            cursor=Settings.current_settings['OkayButton']['cursor'],
-            overrelief=Settings.current_settings['OkayButton']['overrelief'],
-            background=Settings.current_settings['OkayButton']['background'],
-            foreground=Settings.current_settings['OkayButton']['foreground'],
-            borderwidth=Settings.current_settings['OkayButton']['borderwidth'],
-            highlightcolor=Settings.current_settings['OkayButton']['highlightcolor'],
-            activebackground=Settings.current_settings['OkayButton']['activebackground'],
-            activeforeground=Settings.current_settings['OkayButton']['activeforeground'],
+            font=Settings.current_settings['OkayButton']['font'][Settings.theme],
+            state=Settings.current_settings['OkayButton']['state'][Settings.theme],
+            cursor=Settings.current_settings['OkayButton']['cursor'][Settings.theme],
+            overrelief=Settings.current_settings['OkayButton']['overrelief'][Settings.theme],
+            background=Settings.current_settings['OkayButton']['background'][Settings.theme],
+            foreground=Settings.current_settings['OkayButton']['foreground'][Settings.theme],
+            borderwidth=Settings.current_settings['OkayButton']['borderwidth'][Settings.theme],
+            highlightcolor=Settings.current_settings['OkayButton']['highlightcolor'][Settings.theme],
+            activebackground=Settings.current_settings['OkayButton']['activebackground'][Settings.theme],
+            activeforeground=Settings.current_settings['OkayButton']['activeforeground'][Settings.theme]
         )
 
         self['text'] = 'click'

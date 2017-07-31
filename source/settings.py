@@ -5,6 +5,7 @@ import json
 
 class Settings:
 
+    theme = 0
     current_settings = None
     settings_directory = os.path.expanduser('~') + '/.sedenspam'
     settings_file = settings_directory + '/settings.json'
@@ -20,7 +21,7 @@ class Settings:
     @classmethod
     def create(cls):
 
-        if not os.path.isfile(Settings.settings_file):
+        if  os.path.isfile(Settings.settings_file):
             os.makedirs(Settings.settings_directory, exist_ok=True)
             shutil.copyfile('default_settings.json', Settings.settings_file)
 

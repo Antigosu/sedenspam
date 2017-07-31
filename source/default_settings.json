@@ -1,161 +1,531 @@
 {
   "UserChoiceButton": {
-    "foreground": "black",
-    "background": "tan1",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "tan1",
+      "tan1",
+      "tan1"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "SettingsButton": {
-    "foreground": "black",
-    "background": "bisque3",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "bisque3",
+      "bisque3",
+      "bisque3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
-  "ColorButton": {
-    "foreground": "black",
-    "background": "red",
-    "borderwidth": "2",
+    "ColorButton": {
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "bisque3",
+      "bisque3",
+      "bisque3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "ViewButton": {
-    "foreground": "black",
-    "background": "skyblue",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "skyblue",
+      "skyblue",
+      "skyblue"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "ApplyButton": {
-    "foreground": "black",
-    "background": "tan1",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "tan1",
+      "tan1",
+      "tan1"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "CancelButton": {
-    "foreground": "black",
-    "background": "tan1",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "tan1",
+      "tan1",
+      "tan1"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "OperationButton": {
-    "foreground": "black",
-    "background": "springgreen3",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "springgreen3",
+      "springgreen3",
+      "springgreen3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "DeleteButton": {
-    "foreground": "black",
-    "background": "springgreen3",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "springgreen3",
+      "springgreen3",
+      "springgreen3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "AddButton": {
-    "foreground": "black",
-    "background": "springgreen3",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "springgreen3",
+      "springgreen3",
+      "springgreen3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   },
 
   "OkayButton": {
-    "foreground": "black",
-    "background": "springgreen3",
-    "borderwidth": "2",
+
+    "foreground": [
+      "black",
+      "black",
+      "black"],
+
+    "background":[
+      "springgreen3",
+      "springgreen3",
+      "springgreen3"],
+
+    "borderwidth": [
+      "2",
+      "2",
+      "2"],
+
     "font": [
       "Helvetica",
       "10",
       "normal"],
-    "state": "normal",
-    "cursor": "pirate",
-    "activeforeground": "blue",
-    "activebackground": "orange",
-    "highlightcolor": "red",
-    "overrelief": "sunken"
+
+    "state": [
+      "normal",
+      "normal",
+      "normal"],
+
+    "cursor": [
+      "pirate",
+      "pirate",
+      "pirate"],
+
+    "activeforeground": [
+      "blue",
+      "blue",
+      "blue"],
+
+    "activebackground": [
+      "orange",
+      "orange",
+      "orange"],
+
+    "highlightcolor": [
+      "red",
+      "red",
+      "red"],
+
+    "overrelief": [
+      "sunken",
+      "sunken",
+      "sunken"]
   }
 }
