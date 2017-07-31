@@ -6,26 +6,28 @@ import json
 class Settings:
 
     current_settings = None
+    settings_directory = os.path.expanduser('~') + '/.sedenspam'
+    settings_file = settings_directory + '/settings.json'
 
     def __init__(self):
 
-        self.settings_directory = os.path.expanduser('~') + '/.sedenspam'
-        self.settings_file = self.settings_directory + '/settings.json'
-        self.__create()
+        Settings.create()
 
         # Cache init.
-        with open(self.settings_file) as file:
+        with open(Settings.settings_file) as file:
             Settings.current_settings = json.load(file)
 
-    def __create(self):
+    @classmethod
+    def create(cls):
 
-        if not os.path.isfile(self.settings_file):
-            os.makedirs(self.settings_directory, exist_ok=True)
-            shutil.copyfile('default_settings.json', self.settings_file)
+        if not os.path.isfile(Settings.settings_file):
+            os.makedirs(Settings.settings_directory, exist_ok=True)
+            shutil.copyfile('default_settings.json', Settings.settings_file)
 
-    def update(self):
+    @classmethod
+    def update(cls):
 
-        with open(self.settings_file) as file:
+        with open(Settings.settings_file) as file:
             Settings.current_settings = json.load(file)
 
         print(Settings.current_settings)
