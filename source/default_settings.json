@@ -13,5 +13,21 @@
     "activebackground": "orange",
     "highlightcolor": "red",
     "overrelief": "sunken"
+  },
+
+  "SettingsButton": {
+    "foreground": "black",
+    "background": "bisque3",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "bold italic"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
   }
 }

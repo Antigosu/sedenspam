@@ -34,12 +34,6 @@ class UserChoiceButton(tkinter.Button):
 
         windows.BasicInputWindow(self, data_type=self.data_type)
 
-        # Temporary debug.
-
-        # self.update_idletasks()
-        # print(self.winfo_y())
-        # print(self.winfo_x())
-
         # for future
         # os.startfile(path, 'open')
         # x = filedialog.askopenfilename(filetypes = (('.xls'), ('All files'))
@@ -50,10 +44,20 @@ class SettingsButton(tkinter.Button):
     def __init__(self, master, column, row):
         super().__init__(master)
 
+        self.configure(
+            foreground=settings.Settings.current_settings['SettingsButton']['foreground'],
+            background=settings.Settings.current_settings['SettingsButton']['background'],
+            borderwidth=settings.Settings.current_settings['SettingsButton']['borderwidth'],
+            font=settings.Settings.current_settings['SettingsButton']['font'],
+            state=settings.Settings.current_settings['SettingsButton']['state'],
+            cursor=settings.Settings.current_settings['SettingsButton']['cursor'],
+            activeforeground=settings.Settings.current_settings['SettingsButton']['activeforeground'],
+            activebackground=settings.Settings.current_settings['SettingsButton']['activebackground'],
+            highlightcolor=settings.Settings.current_settings['SettingsButton']['highlightcolor'],
+            overrelief=settings.Settings.current_settings['SettingsButton']['overrelief']
+        )
+
         self['text'] = 'Settings'
-        self['fg'] = 'black',
-        self['bg'] = 'bisque3',
-        self['cursor'] = 'pirate',
         self['command'] = self.click
 
         self.grid(
