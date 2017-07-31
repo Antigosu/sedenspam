@@ -26,6 +26,6 @@ class Settings:
     def update(self):
 
         with open(self.settings_file) as file:
-            self.settings = json.load(file)
+            Settings.current_settings = json.load(file)
 
-        print(self.settings)
+        print(Settings.current_settings)
