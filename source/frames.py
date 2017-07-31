@@ -102,8 +102,7 @@ class SettingsFrame(tkinter.Frame):
 
         self.color_label = labels.SettingsLabel(master=self, column=0, row=0)
 
-        self.light_color_button = buttons.ColorButton(master=self, column=0, row=1, color='red')
-        self.dark_color_button = buttons.ColorButton(master=self, column=1, row=1, color='black')
+        self.color_button = buttons.ColorButton(master=self, column=0, row=1)
 
         self.with_view_button = buttons.ViewButton(master=self, column=0, row=2, text='WITH\nPREVIEW')
         self.without_view_button = buttons.ViewButton(master=self, column=1, row=2, text='WITHOUT\nPREVIEW')

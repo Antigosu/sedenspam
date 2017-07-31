@@ -6,7 +6,7 @@
     "font": [
       "Helvetica",
       "10",
-      "bold italic"],
+      "bold"],
     "state": "normal",
     "cursor": "pirate",
     "activeforeground": "blue",
@@ -22,7 +22,23 @@
     "font": [
       "Helvetica",
       "10",
-      "bold italic"],
+      "bold"],
+    "state": "normal",
+    "cursor": "pirate",
+    "activeforeground": "blue",
+    "activebackground": "orange",
+    "highlightcolor": "red",
+    "overrelief": "sunken"
+  },
+
+  "ColorButton": {
+    "foreground": "black",
+    "background": "red",
+    "borderwidth": "2",
+    "font": [
+      "Helvetica",
+      "10",
+      "bold"],
     "state": "normal",
     "cursor": "pirate",
     "activeforeground": "blue",

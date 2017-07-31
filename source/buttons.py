@@ -80,26 +80,34 @@ class SettingsButton(tkinter.Button):
 
 class ColorButton(tkinter.Button):
 
-    def __init__(self, master, column, row, color):
+    def __init__(self, master, column, row):
         super().__init__(master)
 
-        self['fg'] = 'black',
-        self['bg'] = color,
-        self['cursor'] = 'pirate',
+        self.configure(
+            foreground=settings.Settings.current_settings['ColorButton']['foreground'],
+            background=settings.Settings.current_settings['ColorButton']['background'],
+            borderwidth=settings.Settings.current_settings['ColorButton']['borderwidth'],
+            font=settings.Settings.current_settings['ColorButton']['font'],
+            state=settings.Settings.current_settings['ColorButton']['state'],
+            cursor=settings.Settings.current_settings['ColorButton']['cursor'],
+            activeforeground=settings.Settings.current_settings['ColorButton']['activeforeground'],
+            activebackground=settings.Settings.current_settings['ColorButton']['activebackground'],
+            highlightcolor=settings.Settings.current_settings['ColorButton']['highlightcolor'],
+            overrelief=settings.Settings.current_settings['ColorButton']['overrelief']
+        )
+
+        self['text'] = 'Settings'
         self['command'] = self.click
-        self['relief'] = 'raised'
-        self['borderwidth'] = 3
 
         self.grid(
-            column=column, row=row, columnspan=1, rowspan=1,
+            column=column, row=row, columnspan=2, rowspan=1,
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
 
     def click(self):
 
-        self.master.color = self['bg']
-
+        pass
 
 class ViewButton(tkinter.Button):
 
