@@ -8,6 +8,10 @@ class BasicListbox(tkinter.Listbox):
 
         self.data_type = data_type
 
+        self.configure(font=["Fira Code", "15", "bold"],
+                       foreground='#455a64',
+                       background='#cfd8dc')
+
         # Temporary, just for debug.
         self.email_list = [
             'avorochalkin@en-pro.ru',

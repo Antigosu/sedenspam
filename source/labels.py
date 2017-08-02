@@ -6,11 +6,13 @@ class FAQLabel(tkinter.Label):
     def __init__(self, master, column, row):
         super().__init__(master)
 
-        self['text'] = 'welcome'
-        self['fg'] = 'black'
-        self['bg'] = 'bisque3'
+        self['text'] = 'welcome to SES v.0\nfor latest updates please check out \nhttps://github.com/antigosu/sedenspam'
+        self['fg'] = '#ffffff'
+        self['bg'] = '#FF5370'
         self['relief'] = 'raised'
-        self['borderwidth'] = 1
+        self['borderwidth'] = 2
+
+        self.configure(font=["Fira Code", "10", "bold"])
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -26,10 +28,12 @@ class UserChoiceLabel(tkinter.Label):
 
         self.text = 'some text'
         self['text'] = self.text
-        self['fg'] = 'black'
-        self['bg'] = 'tan1'
+        self['fg'] = '#cfd8dc'
+        self['bg'] = '#607d8b'
         self['relief'] = 'raised'
-        self['borderwidth'] = 1
+        self['borderwidth'] = 2
+
+        self.configure(font=["Fira Code", "15", "bold"])
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -49,10 +53,12 @@ class ConsoleLabel(tkinter.Label):
 
         self.text = 'some text'
         self['text'] = self.text
-        self['fg'] = 'black'
-        self['bg'] = 'skyblue'
+        self['fg'] = '#cfd8dc'
+        self['bg'] = '#757575'
         self['relief'] = 'raised'
-        self['borderwidth'] = 1
+        self['borderwidth'] = 2
+
+        self.configure(font=["Fira Code", "10", "bold"])
 
         self.grid(
             column=column, row=row, columnspan=2, rowspan=2,
@@ -72,10 +78,12 @@ class PreviewLabel(tkinter.Label):
 
         self.text = 'some text'
         self['text'] = self.text
-        self['fg'] = 'black'
-        self['bg'] = 'skyblue'
+        self['fg'] = '#cfd8dc'
+        self['bg'] = '#757575'
         self['relief'] = 'raised'
-        self['borderwidth'] = 1
+        self['borderwidth'] = 2
+
+        self.configure(font=["Fira Code", "10", "bold"])
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -94,10 +102,12 @@ class SettingsLabel(tkinter.Label):
         super().__init__(master)
 
         self['text'] = 'Choose your prefer color and view settings'
-        self['fg'] = 'black'
-        self['bg'] = 'bisque3'
+        self['fg'] = '#ffffff'
+        self['bg'] = '#FF5370'
         self['relief'] = 'raised'
-        self['borderwidth'] = 1
+        self['borderwidth'] = 2
+
+        self.configure(font=["Fira Code", "10", "bold"])
 
         self.grid(
             column=column, row=row, columnspan=2, rowspan=1,

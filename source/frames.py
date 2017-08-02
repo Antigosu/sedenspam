@@ -7,7 +7,7 @@ class MainFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
 
-        self.configure(background='steelblue')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
         # for col_index in range(5):
         #     self.columnconfigure(col_index, weight=1, minsize=150)
@@ -24,10 +24,10 @@ class PreviewFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
 
-        self.configure(background='steelblue')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
-        self.columnconfigure(0, weight=1, minsize=300)
-        self.columnconfigure(1, weight=1, minsize=300)
+        self.columnconfigure(0, weight=1, minsize=400)
+        self.columnconfigure(1, weight=1, minsize=400)
 
         self.rowconfigure(0, weight=1, minsize=300)
 
@@ -42,10 +42,10 @@ class SetupFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
 
-        self.configure(background='cyan3')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
-        self.columnconfigure(0, weight=1, minsize=225)
-        self.columnconfigure(1, weight=1, minsize=75)
+        self.columnconfigure(0, weight=1, minsize=300)
+        self.columnconfigure(1, weight=1, minsize=100)
 
         for row_index in range(4):
             self.rowconfigure(row_index, weight=1, minsize=75)
@@ -68,10 +68,10 @@ class OperationFrame(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
 
-        self.configure(background='sienna1')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
-        self.columnconfigure(0, weight=1, minsize=150)
-        self.columnconfigure(1, weight=1, minsize=150)
+        self.columnconfigure(0, weight=1, minsize=200)
+        self.columnconfigure(1, weight=1, minsize=200)
 
         for row_index in range(4):
             self.rowconfigure(row_index, weight=1, minsize=75)
@@ -92,7 +92,7 @@ class SettingsFrame(tkinter.Frame):
         self.color = ''
         self.view = ''
 
-        self.configure(background='sienna1')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
         for col_index in range(4):
             self.columnconfigure(col_index, weight=1, minsize=150)
@@ -104,8 +104,7 @@ class SettingsFrame(tkinter.Frame):
 
         self.color_button = buttons.ColorButton(master=self, column=0, row=1)
 
-        self.with_view_button = buttons.ViewButton(master=self, column=0, row=2, text='WITH\nPREVIEW')
-        self.without_view_button = buttons.ViewButton(master=self, column=1, row=2, text='WITHOUT\nPREVIEW')
+        self.view_button = buttons.ViewButton(master=self, column=0, row=2, text='preview')
 
         self.apply_button = buttons.ApplyButton(master=self, column=0, row=3)
         self.cancel_button = buttons.CancelButton(master=self, column=1, row=3)
@@ -130,7 +129,7 @@ class BasicInputFrame(tkinter.Frame):
 
         self.data_type = data_type
 
-        self.configure(background='sienna1')  # Different colors for debug.
+        self.configure(background='#BDBDBD')  # Different colors for debug.
 
         for col_index in range(3):
             self.columnconfigure(col_index, weight=1, minsize=150)
@@ -145,8 +144,8 @@ class BasicInputFrame(tkinter.Frame):
         elif self.data_type == 'database':
             self.email_list = listboxes.BasicListbox(master=self, column=0, row=0, data_type=self.data_type)
 
-        self.delete_button = buttons.DeleteButton(master=self, column=0, row=1)
+        self.delete_button = buttons.DeleteButton(master=self, column=2, row=1)
         self.add_button = buttons.AddButton(master=self, column=1, row=1)
-        self.okay_button = buttons.OkayButton(master=self, column=2, row=1)
+        self.okay_button = buttons.OkayButton(master=self, column=0, row=1)
 
         self.pack(side='left', fill='both', expand='yes')

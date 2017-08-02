@@ -2,12 +2,12 @@
   "UserChoiceButton": {
 
     "foreground": [
-      "black",
+      "#cfd8dc",
       "black",
       "black"],
 
     "background":[
-      "tan1",
+      "#455a64",
       "tan1",
       "tan1"],
 
@@ -17,9 +17,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -55,12 +55,12 @@
   "SettingsButton": {
 
     "foreground": [
-      "black",
+      "#ffffff",
       "black",
       "black"],
 
     "background":[
-      "bisque3",
+      "#FF5370",
       "bisque3",
       "bisque3"],
 
@@ -70,9 +70,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -105,15 +105,15 @@
       "sunken"]
   },
 
-    "ColorButton": {
+  "ColorButton": {
 
     "foreground": [
-      "black",
+      "#cfd8dc",
       "black",
       "black"],
 
     "background":[
-      "bisque3",
+      "#455a64",
       "bisque3",
       "bisque3"],
 
@@ -123,9 +123,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -161,14 +161,14 @@
   "ViewButton": {
 
     "foreground": [
-      "black",
+      "#cfd8dc",
       "black",
       "black"],
 
     "background":[
-      "skyblue",
-      "skyblue",
-      "skyblue"],
+      "#455a64",
+      "bisque3",
+      "bisque3"],
 
     "borderwidth": [
       "2",
@@ -176,9 +176,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -214,14 +214,14 @@
   "ApplyButton": {
 
     "foreground": [
-      "black",
+      "#ffffff",
       "black",
       "black"],
 
     "background":[
-      "tan1",
-      "tan1",
-      "tan1"],
+      "#FF5370",
+      "bisque3",
+      "bisque3"],
 
     "borderwidth": [
       "2",
@@ -229,9 +229,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -267,12 +267,12 @@
   "CancelButton": {
 
     "foreground": [
-      "black",
+      "#ffffff",
       "black",
       "black"],
 
     "background":[
-      "tan1",
+      "#757575",
       "tan1",
       "tan1"],
 
@@ -282,9 +282,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -320,12 +320,24 @@
   "OperationButton": {
 
     "foreground": [
-      "black",
+      "#cfd8dc",
       "black",
       "black"],
 
     "background":[
-      "springgreen3",
+      "#455a64",
+      "#607D8B",
+      "#ab7967",
+      "#bb80b3",
+      "#C792EA",
+      "#f07178",
+      "#82AAFF",
+      "#89DDFF",
+      "#FF5370",
+      "#B2CCD6",
+      "#C3E88D",
+      "#FFCB6B",
+      "#F78C6C",
       "springgreen3",
       "springgreen3"],
 
@@ -335,9 +347,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "20",
+      "bold"],
 
     "state": [
       "normal",
@@ -373,14 +385,14 @@
   "DeleteButton": {
 
     "foreground": [
-      "black",
+      "#ffffff",
       "black",
       "black"],
 
     "background":[
-      "springgreen3",
-      "springgreen3",
-      "springgreen3"],
+      "#757575",
+      "tan1",
+      "tan1"],
 
     "borderwidth": [
       "2",
@@ -388,9 +400,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -426,14 +438,14 @@
   "AddButton": {
 
     "foreground": [
-      "black",
+      "#cfd8dc",
       "black",
       "black"],
 
     "background":[
-      "springgreen3",
-      "springgreen3",
-      "springgreen3"],
+      "#455a64",
+      "bisque3",
+      "bisque3"],
 
     "borderwidth": [
       "2",
@@ -441,9 +453,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
@@ -479,14 +491,14 @@
   "OkayButton": {
 
     "foreground": [
-      "black",
+      "#ffffff",
       "black",
       "black"],
 
     "background":[
-      "springgreen3",
-      "springgreen3",
-      "springgreen3"],
+      "#FF5370",
+      "bisque3",
+      "bisque3"],
 
     "borderwidth": [
       "2",
@@ -494,9 +506,9 @@
       "2"],
 
     "font": [
-      "Helvetica",
-      "10",
-      "normal"],
+      "Fira Code",
+      "15",
+      "bold"],
 
     "state": [
       "normal",
