@@ -40,6 +40,7 @@ class SettingsWindow(tkinter.Toplevel):
     def __init__(self, master):
         super().__init__(master)
 
+        self.wm_attributes('-toolwindow', 1)
         self.size = '300x300'
         self.resizable(0, 0)
         # self.master = master
@@ -74,9 +75,11 @@ class BasicInputWindow(tkinter.Toplevel):
     def __init__(self, master, data_type):
         super().__init__(master)
 
+        self.wm_attributes('-toolwindow', 1)
         self.data_type = data_type
 
         self.size = '450x300'
+        self.resizable(0, 0)
         # self.master = master
         self.title(f'Basic {self.data_type} information')
         # self.geometry(f'{self.size}+500+375')
