@@ -38,7 +38,7 @@
 
     "activebackground": [
       "#FF5370",
-      "#FF5370",
+      "orange",
       "orange"],
 
     "highlightcolor": [
@@ -85,12 +85,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#ffffff",
       "orange",
       "orange"],
 
@@ -138,12 +138,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -191,12 +191,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -244,12 +244,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -297,12 +297,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -362,12 +362,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -385,7 +385,7 @@
   "DeleteButton": {
 
     "foreground": [
-      "#cfd8dc",
+      "#ffffff",
       "black",
       "black"],
 
@@ -415,12 +415,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -468,12 +468,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
@@ -521,12 +521,12 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
+      "#FF5370",
       "orange",
       "orange"],
 
