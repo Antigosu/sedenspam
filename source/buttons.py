@@ -22,7 +22,6 @@ class UserChoiceButton(tkinter.Button):
             activeforeground=Settings.current_settings['UserChoiceButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'click'
         self['command'] = self.click
 
         self.grid(
@@ -30,6 +29,21 @@ class UserChoiceButton(tkinter.Button):
             padx=5, pady=5, ipadx=5, ipady=5,
             sticky='WENS'
         )
+
+        self.image1 = tkinter.PhotoImage(file=r'..\images\user-lightgrey.png')
+        self.image2 = tkinter.PhotoImage(file=r'..\images\form-lightgrey.png')
+        self.image3 = tkinter.PhotoImage(file=r'..\images\base-lightgrey.png')
+        if self.data_type == 'email':
+            self['image'] = self.image1
+            self['text'] = ' user'
+        elif self.data_type == 'template':
+            self['image'] = self.image2
+            self['text'] = ' form'
+        elif self.data_type == 'database':
+            self['image'] = self.image3
+            self['text'] = ' base'
+
+        self['compound'] = 'left'
 
     def click(self):
 
@@ -58,8 +72,11 @@ class SettingsButton(tkinter.Button):
             activeforeground=Settings.current_settings['SettingsButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'tune'
+        self['text'] = ' tune'
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\tune-white.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -72,11 +89,11 @@ class SettingsButton(tkinter.Button):
         windows.SettingsWindow(self)
 
         # Temporary debug.
-        Settings.update()
-
-        self.update_idletasks()
-        print(self.winfo_y())
-        print(self.winfo_x())
+        # Settings.update()
+        #
+        # self.update_idletasks()
+        # print(self.winfo_y())
+        # print(self.winfo_x())
 
 
 class ColorButton(tkinter.Button):
@@ -97,8 +114,11 @@ class ColorButton(tkinter.Button):
             activeforeground=Settings.current_settings['ColorButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'color'
+        self['text'] = ' color'
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\color-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=2, rowspan=1,
@@ -131,6 +151,9 @@ class ViewButton(tkinter.Button):
 
         self['text'] = text
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\preview-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=2, rowspan=1,
@@ -161,8 +184,11 @@ class ApplyButton(tkinter.Button):
             activeforeground=Settings.current_settings['ApplyButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'APPLY'
+        self['text'] = ' APPLY'
         self['command'] = self.apply
+        self.image = tkinter.PhotoImage(file=r'..\images\apply-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -192,8 +218,11 @@ class CancelButton(tkinter.Button):
             activeforeground=Settings.current_settings['CancelButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'CANCEL'
+        self['text'] = ' CANCEL'
         self['command'] = self.cancel
+        self.image = tkinter.PhotoImage(file=r'..\images\cancel-white.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -207,9 +236,10 @@ class CancelButton(tkinter.Button):
 
 class OperationButton(tkinter.Button):
 
-    def __init__(self, master, column, row):
+    def __init__(self, master, column, row, action):
         super().__init__(master)
 
+        self.action = action
         self.configure(
             font=Settings.current_settings['OperationButton']['font'],
             state=Settings.current_settings['OperationButton']['state'][Settings.theme],
@@ -223,8 +253,18 @@ class OperationButton(tkinter.Button):
             activeforeground=Settings.current_settings['OperationButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'SAVE\nor\nSEND'
         self['command'] = self.click
+
+        self.image1 = tkinter.PhotoImage(file=r'..\images\save-lightgrey.png')
+        self.image2 = tkinter.PhotoImage(file=r'..\images\send-lightgrey.png')
+        if self.action == 'save':
+            self['image'] = self.image1
+            self['text'] = 'SAVE'
+        elif self.action == 'send':
+            self['image'] = self.image2
+            self['text'] = 'SEND'
+
+        self['compound'] = 'bottom'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=3,
@@ -261,8 +301,11 @@ class DeleteButton(tkinter.Button):
             activeforeground=Settings.current_settings['DeleteButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'click'
+        self['text'] = ' DEL'
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\delete-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -293,8 +336,11 @@ class AddButton(tkinter.Button):
             activeforeground=Settings.current_settings['AddButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'click'
+        self['text'] = ' ADD'
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\add-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,
@@ -325,8 +371,11 @@ class OkayButton(tkinter.Button):
             activeforeground=Settings.current_settings['OkayButton']['activeforeground'][Settings.theme]
         )
 
-        self['text'] = 'click'
+        self['text'] = ' OK'
         self['command'] = self.click
+        self.image = tkinter.PhotoImage(file=r'..\images\okay-lightgrey.png')
+        self['image'] = self.image
+        self['compound'] = 'left'
 
         self.grid(
             column=column, row=row, columnspan=1, rowspan=1,

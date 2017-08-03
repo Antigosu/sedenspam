@@ -78,8 +78,8 @@ class OperationFrame(tkinter.Frame):
 
         self.console = labels.ConsoleLabel(master=self, column=0, row=0)
 
-        self.send_button = buttons.OperationButton(master=self, column=0, row=2)
-        self.exit_button = buttons.OperationButton(master=self, column=1, row=2)
+        self.send_button = buttons.OperationButton(master=self, column=0, row=2, action='save')
+        self.exit_button = buttons.OperationButton(master=self, column=1, row=2, action='send')
 
         self.pack(side='right', fill='both', expand='yes')
 
@@ -104,7 +104,7 @@ class SettingsFrame(tkinter.Frame):
 
         self.color_button = buttons.ColorButton(master=self, column=0, row=1)
 
-        self.view_button = buttons.ViewButton(master=self, column=0, row=2, text='preview')
+        self.view_button = buttons.ViewButton(master=self, column=0, row=2, text=' preview')
 
         self.apply_button = buttons.ApplyButton(master=self, column=0, row=3)
         self.cancel_button = buttons.CancelButton(master=self, column=1, row=3)

@@ -32,13 +32,13 @@
       "pirate"],
 
     "activeforeground": [
-      "blue",
+      "#cfd8dc",
       "blue",
       "blue"],
 
     "activebackground": [
-      "orange",
-      "orange",
+      "#FF5370",
+      "#FF5370",
       "orange"],
 
     "highlightcolor": [
@@ -385,7 +385,7 @@
   "DeleteButton": {
 
     "foreground": [
-      "#ffffff",
+      "#cfd8dc",
       "black",
       "black"],
 
