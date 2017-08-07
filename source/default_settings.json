@@ -3,17 +3,13 @@
 
     "foreground": [
       "#cfd8dc",
-      "black",
-      "black"],
+      "#cfd8dc"],
 
     "background":[
       "#455a64",
-      "tan1",
-      "tan1"],
+      "#455a64"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -22,33 +18,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -56,13 +39,11 @@
 
     "foreground": [
       "#ffffff",
-      "black",
-      "black"],
+      "#ffffff"],
 
     "background":[
-      "#FF5370",
-      "bisque3",
-      "bisque3"],
+      "#ff5370",
+      "#ff5370"],
 
     "borderwidth": [
       "2",
@@ -75,33 +56,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#ffffff",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#455a64",
+      "#455a64"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -109,17 +77,13 @@
 
     "foreground": [
       "#cfd8dc",
-      "black",
-      "black"],
+      "#cfd8dc"],
 
     "background":[
       "#455a64",
-      "bisque3",
-      "bisque3"],
+      "#455a64"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -128,33 +92,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -162,17 +113,13 @@
 
     "foreground": [
       "#cfd8dc",
-      "black",
-      "black"],
+      "#cfd8dc"],
 
     "background":[
       "#455a64",
-      "bisque3",
-      "bisque3"],
+      "#455a64"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -181,33 +128,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -215,17 +149,13 @@
 
     "foreground": [
       "#ffffff",
-      "black",
-      "black"],
+      "#ffffff"],
 
     "background":[
-      "#FF5370",
-      "bisque3",
-      "bisque3"],
+      "#ff5370",
+      "#ff5370"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -234,33 +164,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -268,17 +185,13 @@
 
     "foreground": [
       "#ffffff",
-      "black",
-      "black"],
+      "#ffffff"],
 
     "background":[
       "#757575",
-      "tan1",
-      "tan1"],
+      "#757575"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -287,33 +200,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -321,8 +221,7 @@
 
     "foreground": [
       "#cfd8dc",
-      "black",
-      "black"],
+      "#cfd8dc"],
 
     "background":[
       "#455a64",
@@ -342,8 +241,6 @@
       "springgreen3"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -352,33 +249,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -386,17 +270,13 @@
 
     "foreground": [
       "#ffffff",
-      "black",
-      "black"],
+      "#ffffff"],
 
     "background":[
       "#757575",
-      "tan1",
-      "tan1"],
+      "#757575"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -405,33 +285,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -439,17 +306,13 @@
 
     "foreground": [
       "#cfd8dc",
-      "black",
-      "black"],
+      "#cfd8dc"],
 
     "background":[
       "#455a64",
-      "bisque3",
-      "bisque3"],
+      "#455a64"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -458,33 +321,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   },
 
@@ -492,17 +342,13 @@
 
     "foreground": [
       "#ffffff",
-      "black",
-      "black"],
+      "#ffffff"],
 
     "background":[
-      "#FF5370",
-      "bisque3",
-      "bisque3"],
+      "#ff5370",
+      "#ff5370"],
 
     "borderwidth": [
-      "2",
-      "2",
       "2"],
 
     "font": [
@@ -511,33 +357,20 @@
       "bold"],
 
     "state": [
-      "normal",
-      "normal",
       "normal"],
 
     "cursor": [
-      "pirate",
-      "pirate",
-      "pirate"],
+      "hand2"],
 
     "activeforeground": [
       "#cfd8dc",
-      "blue",
-      "blue"],
+      "#cfd8dc"],
 
     "activebackground": [
-      "#FF5370",
-      "orange",
-      "orange"],
-
-    "highlightcolor": [
-      "red",
-      "red",
-      "red"],
+      "#ff5370",
+      "#ff5370"],
 
     "overrelief": [
-      "sunken",
-      "sunken",
       "sunken"]
   }
 }

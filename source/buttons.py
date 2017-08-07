@@ -17,7 +17,6 @@ class UserChoiceButton(tkinter.Button):
             background=Settings.current_settings['UserChoiceButton']['background'][Settings.theme],
             foreground=Settings.current_settings['UserChoiceButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['UserChoiceButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['UserChoiceButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['UserChoiceButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['UserChoiceButton']['activeforeground'][Settings.theme]
         )
@@ -67,7 +66,6 @@ class SettingsButton(tkinter.Button):
             background=Settings.current_settings['SettingsButton']['background'][Settings.theme],
             foreground=Settings.current_settings['SettingsButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['SettingsButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['SettingsButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['SettingsButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['SettingsButton']['activeforeground'][Settings.theme]
         )
@@ -109,7 +107,6 @@ class ColorButton(tkinter.Button):
             background=Settings.current_settings['ColorButton']['background'][Settings.theme],
             foreground=Settings.current_settings['ColorButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['ColorButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['ColorButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['ColorButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['ColorButton']['activeforeground'][Settings.theme]
         )
@@ -144,7 +141,6 @@ class ViewButton(tkinter.Button):
             background=Settings.current_settings['ViewButton']['background'][Settings.theme],
             foreground=Settings.current_settings['ViewButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['ViewButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['ViewButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['ViewButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['ViewButton']['activeforeground'][Settings.theme]
         )
@@ -179,7 +175,6 @@ class ApplyButton(tkinter.Button):
             background=Settings.current_settings['ApplyButton']['background'][Settings.theme],
             foreground=Settings.current_settings['ApplyButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['ApplyButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['ApplyButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['ApplyButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['ApplyButton']['activeforeground'][Settings.theme]
         )
@@ -213,7 +208,6 @@ class CancelButton(tkinter.Button):
             background=Settings.current_settings['CancelButton']['background'][Settings.theme],
             foreground=Settings.current_settings['CancelButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['CancelButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['CancelButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['CancelButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['CancelButton']['activeforeground'][Settings.theme]
         )
@@ -248,7 +242,6 @@ class OperationButton(tkinter.Button):
             background=Settings.current_settings['OperationButton']['background'][Settings.theme],
             foreground=Settings.current_settings['OperationButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['OperationButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['OperationButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['OperationButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['OperationButton']['activeforeground'][Settings.theme]
         )
@@ -296,7 +289,6 @@ class DeleteButton(tkinter.Button):
             background=Settings.current_settings['DeleteButton']['background'][Settings.theme],
             foreground=Settings.current_settings['DeleteButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['DeleteButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['DeleteButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['DeleteButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['DeleteButton']['activeforeground'][Settings.theme]
         )
@@ -331,7 +323,6 @@ class AddButton(tkinter.Button):
             background=Settings.current_settings['AddButton']['background'][Settings.theme],
             foreground=Settings.current_settings['AddButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['AddButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['AddButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['AddButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['AddButton']['activeforeground'][Settings.theme]
         )
@@ -366,7 +357,6 @@ class OkayButton(tkinter.Button):
             background=Settings.current_settings['OkayButton']['background'][Settings.theme],
             foreground=Settings.current_settings['OkayButton']['foreground'][Settings.theme],
             borderwidth=Settings.current_settings['OkayButton']['borderwidth'][Settings.theme],
-            highlightcolor=Settings.current_settings['OkayButton']['highlightcolor'][Settings.theme],
             activebackground=Settings.current_settings['OkayButton']['activebackground'][Settings.theme],
             activeforeground=Settings.current_settings['OkayButton']['activeforeground'][Settings.theme]
         )
